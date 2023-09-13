@@ -1,0 +1,41 @@
+# wpTails WordPress Theme Starter Kit
+# Git Ignore File
+# Ignore Everything!
+/*
+
+# Addtional Items That Must Be Ignored...
+# Specific SubFolders, Files, Etc.
+/symlinks/**
+# macOS...
+**/.DS_Store
+# Windows
+**/Thumbs.db
+# Repositories...
+**/.git
+**/.svn
+
+# Except these files/folders...
+# Dot Folders
+!.github
+
+# Dot Fiiles
+!.editorconfig
+!.gitignore
+!.gitkeep
+
+# Project Folders
+
+
+
+# Project Files
+!cspell.json
+!package.json
+!LICENSE.md
+!README.md
+!wpTails-dict.txt
+!wpTails.todo
+
+# vsCode Workspace
+!wpTails.code-workspace
+
+# End of Git Ignore File
