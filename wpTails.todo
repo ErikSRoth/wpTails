@@ -278,7 +278,7 @@
                 "key": 1694567441256,
                 "children": [],
                 "todo": {
-                  "content": "Gulp",
+                  "content": "gulp",
                   "id": 1694567441256,
                   "level": "default",
                   "done": false,
@@ -289,11 +289,66 @@
                 "key": 1694568526341,
                 "children": [],
                 "todo": {
-                  "content": "Babel",
+                  "content": "@babel/core",
                   "id": 1694568526341,
                   "level": "default",
                   "done": false,
                   "start": 1694568526342
+                }
+              },
+              {
+                "key": 1694616209338,
+                "children": [],
+                "todo": {
+                  "content": "@babel/preset-env",
+                  "id": 1694616209338,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694616209338
+                }
+              },
+              {
+                "key": 1694616235939,
+                "children": [],
+                "todo": {
+                  "content": "@babel/register",
+                  "id": 1694616235939,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694616235939
+                }
+              },
+              {
+                "key": 1694616265780,
+                "children": [],
+                "todo": {
+                  "content": "tailwindcss",
+                  "id": 1694616265780,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694616265780
+                }
+              },
+              {
+                "key": 1694616277895,
+                "children": [],
+                "todo": {
+                  "content": "autoprefixer",
+                  "id": 1694616277895,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694616277895
+                }
+              },
+              {
+                "key": 1694616286031,
+                "children": [],
+                "todo": {
+                  "content": "browsersync",
+                  "id": 1694616286031,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694616286031
                 }
               }
             ],
@@ -574,7 +629,8 @@
       1692148365486,
       1694568487817,
       1692148407005,
-      1692155852216
+      1692155852216,
+      1694567441256
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
@@ -587,6 +643,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694570709292"
+    "version": "1694616291485"
   }
 }
