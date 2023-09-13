@@ -170,6 +170,28 @@
                   "done": false,
                   "start": 1694571373177
                 }
+              },
+              {
+                "key": 1694573748669,
+                "children": [],
+                "todo": {
+                  "content": "add functions folder",
+                  "id": 1694573748669,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573748669
+                }
+              },
+              {
+                "key": 1694573762673,
+                "children": [],
+                "todo": {
+                  "content": "add templates folder with subfolders for specific types of templates- i.e. headers, footers, etc.",
+                  "id": 1694573762673,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573762673
+                }
               }
             ],
             "todo": {
@@ -260,6 +282,17 @@
               "done": false,
               "start": 1694568458193
             }
+          },
+          {
+            "key": 1694573086168,
+            "children": [],
+            "todo": {
+              "content": "Create graphic header for readme file",
+              "id": 1694573086168,
+              "level": "default",
+              "done": false,
+              "start": 1694573086168
+            }
           }
         ],
         "todo": {
@@ -268,6 +301,62 @@
           "level": "default",
           "done": false,
           "start": 1694568487817
+        }
+      },
+      {
+        "key": 1694572874817,
+        "children": [
+          {
+            "key": 1694572898317,
+            "children": [],
+            "todo": {
+              "content": "babel",
+              "id": 1694572898317,
+              "level": "default",
+              "done": false,
+              "start": 1694572898317
+            }
+          },
+          {
+            "key": 1694572908275,
+            "children": [],
+            "todo": {
+              "content": "eslint",
+              "id": 1694572908275,
+              "level": "default",
+              "done": false,
+              "start": 1694572908275
+            }
+          },
+          {
+            "key": 1694573305473,
+            "children": [],
+            "todo": {
+              "content": "browser list",
+              "id": 1694573305473,
+              "level": "default",
+              "done": false,
+              "start": 1694573305473
+            }
+          },
+          {
+            "key": 1694573317156,
+            "children": [],
+            "todo": {
+              "content": "prettier",
+              "id": 1694573317156,
+              "level": "default",
+              "done": false,
+              "start": 1694573317156
+            }
+          }
+        ],
+        "todo": {
+          "content": "Add Script Files",
+          "id": 1694572874817,
+          "level": "default",
+          "done": false,
+          "start": 1694572874817
         }
       },
       {
@@ -304,11 +393,99 @@
                 "key": 1694568526341,
                 "children": [],
                 "todo": {
-                  "content": "Babel",
+                  "content": "Babel Core",
                   "id": 1694568526341,
                   "level": "default",
                   "done": false,
                   "start": 1694568526342
+                }
+              },
+              {
+                "key": 1694572764262,
+                "children": [],
+                "todo": {
+                  "content": "Babel Preset-env",
+                  "id": 1694572764262,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694572764262
+                }
+              },
+              {
+                "key": 1694572787889,
+                "children": [],
+                "todo": {
+                  "content": "Babel register",
+                  "id": 1694572787889,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694572787889
+                }
+              },
+              {
+                "key": 1694572800048,
+                "children": [],
+                "todo": {
+                  "content": "autoprefixer",
+                  "id": 1694572800048,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694572800048
+                }
+              },
+              {
+                "key": 1694572810790,
+                "children": [],
+                "todo": {
+                  "content": "tailwindcss",
+                  "id": 1694572810790,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694572810790
+                }
+              },
+              {
+                "key": 1694573030869,
+                "children": [],
+                "todo": {
+                  "content": "browsersync",
+                  "id": 1694573030869,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573030869
+                }
+              },
+              {
+                "key": 1694573218158,
+                "children": [],
+                "todo": {
+                  "content": "gulp-clean",
+                  "id": 1694573218158,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573218159
+                }
+              },
+              {
+                "key": 1694573226071,
+                "children": [],
+                "todo": {
+                  "content": "gulp-clean-css",
+                  "id": 1694573226071,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573226071
+                }
+              },
+              {
+                "key": 1694573245583,
+                "children": [],
+                "todo": {
+                  "content": "gulp-concat",
+                  "id": 1694573245583,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573245583
                 }
               }
             ],
@@ -320,6 +497,139 @@
               "start": 1692155745707,
               "focus": false,
               "end": 1692365385348
+            }
+          },
+          {
+            "key": 1694572695526,
+            "children": [
+              {
+                "key": 1694573368795,
+                "children": [],
+                "todo": {
+                  "content": "dev script",
+                  "id": 1694573368795,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573368795
+                }
+              },
+              {
+                "key": 1694573384882,
+                "children": [],
+                "todo": {
+                  "content": "build script",
+                  "id": 1694573384882,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573384882
+                }
+              },
+              {
+                "key": 1694573391131,
+                "children": [],
+                "todo": {
+                  "content": "eslint scripts",
+                  "id": 1694573391131,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573391131
+                }
+              },
+              {
+                "key": 1694573400827,
+                "children": [],
+                "todo": {
+                  "content": "watch script",
+                  "id": 1694573400827,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573400827
+                }
+              },
+              {
+                "key": 1694573425408,
+                "children": [],
+                "todo": {
+                  "content": "build production",
+                  "id": 1694573425408,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573425408
+                }
+              },
+              {
+                "key": 1694573436784,
+                "children": [],
+                "todo": {
+                  "content": "test build tools",
+                  "id": 1694573436784,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573436784
+                }
+              },
+              {
+                "key": 1694573452265,
+                "children": [],
+                "todo": {
+                  "content": "test theme",
+                  "id": 1694573452265,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573452265
+                }
+              },
+              {
+                "key": 1694573459787,
+                "children": [],
+                "todo": {
+                  "content": "create child theme",
+                  "id": 1694573459787,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573459787
+                }
+              },
+              {
+                "key": 1694573478268,
+                "children": [],
+                "todo": {
+                  "content": "bundle production main theme and child",
+                  "id": 1694573478268,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573478268
+                }
+              },
+              {
+                "key": 1694573515996,
+                "children": [],
+                "todo": {
+                  "content": "script to install npm and composer dependancies",
+                  "id": 1694573515996,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573515996
+                }
+              },
+              {
+                "key": 1694573568796,
+                "children": [],
+                "todo": {
+                  "content": "test and release production bundle",
+                  "id": 1694573568796,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694573568796
+                }
+              }
+            ],
+            "todo": {
+              "content": "add run scripts",
+              "id": 1694572695526,
+              "level": "default",
+              "done": false,
+              "start": 1694572695526
             }
           }
         ],
@@ -356,6 +666,28 @@
               "level": "default",
               "done": false,
               "start": 1694567757829
+            }
+          },
+          {
+            "key": 1694572969883,
+            "children": [],
+            "todo": {
+              "content": "cleanup function - clean build directories",
+              "id": 1694572969883,
+              "level": "default",
+              "done": false,
+              "start": 1694572969883
+            }
+          },
+          {
+            "key": 1694573005145,
+            "children": [],
+            "todo": {
+              "content": "gulp variables config file",
+              "id": 1694573005145,
+              "level": "default",
+              "done": false,
+              "start": 1694573005145
             }
           }
         ],
@@ -413,6 +745,17 @@
               "done": false,
               "start": 1694568256605
             }
+          },
+          {
+            "key": 1694573620226,
+            "children": [],
+            "todo": {
+              "content": "dual license file",
+              "id": 1694573620226,
+              "level": "default",
+              "done": false,
+              "start": 1694573620226
+            }
           }
         ],
         "todo": {
@@ -437,6 +780,50 @@
               "level": "default",
               "done": false,
               "start": 1694567648622
+            }
+          },
+          {
+            "key": 1694573660130,
+            "children": [],
+            "todo": {
+              "content": "set directories in functions",
+              "id": 1694573660130,
+              "level": "default",
+              "done": false,
+              "start": 1694573660130
+            }
+          },
+          {
+            "key": 1694573683831,
+            "children": [],
+            "todo": {
+              "content": "add styles include",
+              "id": 1694573683831,
+              "level": "default",
+              "done": false,
+              "start": 1694573683831
+            }
+          },
+          {
+            "key": 1694573714973,
+            "children": [],
+            "todo": {
+              "content": "add scripts include",
+              "id": 1694573714973,
+              "level": "default",
+              "done": false,
+              "start": 1694573714973
+            }
+          },
+          {
+            "key": 1694573724271,
+            "children": [],
+            "todo": {
+              "content": "build navwalker include",
+              "id": 1694573724271,
+              "level": "default",
+              "done": false,
+              "start": 1694573724271
             }
           }
         ],
@@ -587,9 +974,11 @@
       1694567720827,
       1694568173385,
       1692148365486,
-      1694568487817,
       1692148407005,
-      1692155852216
+      1692155852216,
+      1694568487817,
+      1694572874817,
+      1694572695526
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
@@ -602,6 +991,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694572626544"
+    "version": "1694573801661"
   }
 }
