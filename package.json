@@ -1,0 +1,26 @@
+{
+  "name": "wptails",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "...",
+  "scripts": {
+    "test": "..."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikSRoth/wpTails.git"
+  },
+  "keywords": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "author": "Erik Roth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ErikSRoth/wpTails/issues"
+  },
+  "homepage": "https://github.com/ErikSRoth/wpTails#readme"
+}
