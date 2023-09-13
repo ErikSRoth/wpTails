@@ -280,10 +280,10 @@
               "content": "Basic NPM Init",
               "id": 1692155729553,
               "level": "default",
-              "done": false,
+              "done": true,
               "start": 1692155729553,
               "focus": false,
-              "end": 1692365382758
+              "end": 1694572626390
             }
           },
           {
@@ -602,6 +602,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694571382537"
+    "version": "1694572626544"
   }
 }
