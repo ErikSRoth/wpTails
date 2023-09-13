@@ -180,7 +180,41 @@
           },
           {
             "key": 1692155852216,
-            "children": [],
+            "children": [
+              {
+                "key": 1694570108489,
+                "children": [],
+                "todo": {
+                  "content": "Title and header",
+                  "id": 1694570108489,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694570108489
+                }
+              },
+              {
+                "key": 1694570118784,
+                "children": [],
+                "todo": {
+                  "content": "about the project",
+                  "id": 1694570118784,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694570118784
+                }
+              },
+              {
+                "key": 1694570134804,
+                "children": [],
+                "todo": {
+                  "content": "how to use wpTails",
+                  "id": 1694570134804,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694570134804
+                }
+              }
+            ],
             "todo": {
               "content": "README file sections",
               "id": 1692155852216,
@@ -537,8 +571,10 @@
       1692156967710,
       1694567720827,
       1694568173385,
+      1692148365486,
       1694568487817,
-      1692148365486
+      1692148407005,
+      1692155852216
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
@@ -551,6 +587,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694568530781"
+    "version": "1694570709292"
   }
 }
