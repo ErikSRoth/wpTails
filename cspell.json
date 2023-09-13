@@ -1,0 +1,40 @@
+// cSpell settings for the wpTails repository.
+{
+    // Use most recent cSpell json schema.
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+
+    // Current version of this setting file.
+    // Do Not Change!
+    "version": "0.2",
+
+    // This is the main language for this repository
+    "language": "en",
+
+    // Don't bother spell checking ignored files.
+    "useGitignore": true,
+
+    // Additionally ignore these paths and files.
+    "ignorePaths": [ "/package.json", "/node_modules/", "/wpTails-dict.txt", "/wpTails.code-workspace" ],
+
+    // Add custom Dictionary File
+    "dictionaries": [ "wpTails Dictionary", "companies", "softwareTerms" ],
+    "dictionaryDefinitions": [
+        {
+            "name": "wpTails Dictionary",
+            "path": "./wpTails-dict.txt",
+            "addWords": true
+        }
+    ],
+
+    // Language setting for specific file types
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": [ "en_us", "en_gb" ]
+        },
+        {
+            "languageId": "markdown",
+            "caseSensitive": true
+        }
+    ]
+}
