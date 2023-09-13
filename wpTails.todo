@@ -14,8 +14,10 @@
                   "content": "add .gitkeep",
                   "id": 1692155843769,
                   "level": "default",
-                  "done": false,
-                  "start": 1692155843769
+                  "done": true,
+                  "start": 1692155843769,
+                  "focus": false,
+                  "end": 1694571331937
                 }
               },
               {
@@ -25,10 +27,10 @@
                   "content": "Create License Text - MIT",
                   "id": 1692155758538,
                   "level": "default",
-                  "done": false,
+                  "done": true,
                   "start": 1692155758538,
                   "focus": false,
-                  "end": 1692364864140
+                  "end": 1694571329263
                 }
               },
               {
@@ -62,8 +64,10 @@
                   "content": "add LICENSE file",
                   "id": 1694567173489,
                   "level": "default",
-                  "done": false,
-                  "start": 1694567173489
+                  "done": true,
+                  "start": 1694567173489,
+                  "focus": false,
+                  "end": 1694571343484
                 }
               },
               {
@@ -154,6 +158,17 @@
                   "start": 1694568173386,
                   "focus": false,
                   "end": 1694568362939
+                }
+              },
+              {
+                "key": 1694571373177,
+                "children": [],
+                "todo": {
+                  "content": "add .editorconfig",
+                  "id": 1694571373177,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694571373177
                 }
               }
             ],
@@ -587,6 +602,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694570709292"
+    "version": "1694571382537"
   }
 }
