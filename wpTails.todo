@@ -713,8 +713,10 @@
               "content": "Create WP required stylesheet file",
               "id": 1694568256605,
               "level": "default",
-              "done": false,
-              "start": 1694568256605
+              "done": true,
+              "start": 1694568256605,
+              "focus": false,
+              "end": 1694701297954
             }
           },
           {
@@ -819,6 +821,28 @@
               "done": false,
               "start": 1694661574467
             }
+          },
+          {
+            "key": 1694701306318,
+            "children": [],
+            "todo": {
+              "content": "create temp style.css for testing",
+              "id": 1694701306318,
+              "level": "default",
+              "done": false,
+              "start": 1694701306318
+            }
+          },
+          {
+            "key": 1694701322154,
+            "children": [],
+            "todo": {
+              "content": "remove temp style.css",
+              "id": 1694701322154,
+              "level": "default",
+              "done": false,
+              "start": 1694701322154
+            }
           }
         ],
         "todo": {
@@ -828,7 +852,7 @@
           "done": false,
           "start": 1692156947451,
           "focus": false,
-          "end": 1694661452497
+          "end": 1694701302443
         }
       },
       {
@@ -1058,6 +1082,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694701199718"
+    "version": "1694701331748"
   }
 }
