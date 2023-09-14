@@ -354,8 +354,10 @@
                   "content": "@babel/preset-env",
                   "id": 1694616209338,
                   "level": "default",
-                  "done": false,
-                  "start": 1694616209338
+                  "done": true,
+                  "start": 1694616209338,
+                  "focus": false,
+                  "end": 1694666310930
                 }
               },
               {
@@ -365,8 +367,10 @@
                   "content": "@babel/register",
                   "id": 1694616235939,
                   "level": "default",
-                  "done": false,
-                  "start": 1694616235939
+                  "done": true,
+                  "start": 1694616235939,
+                  "focus": false,
+                  "end": 1694666312548
                 }
               },
               {
@@ -992,6 +996,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694662731409"
+    "version": "1694666312737"
   }
 }

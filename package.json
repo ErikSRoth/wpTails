@@ -25,7 +25,9 @@
     "config": "configs"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.17"
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/register": "^7.22.15"
   },
   "scripts": {
     "test": "..."
