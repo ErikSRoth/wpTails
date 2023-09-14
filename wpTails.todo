@@ -150,13 +150,13 @@
                 "key": 1694568173385,
                 "children": [],
                 "todo": {
-                  "content": "add dev folder",
+                  "content": "add dev folder (src)",
                   "id": 1694568173385,
                   "level": "default",
-                  "done": false,
+                  "done": true,
                   "start": 1694568173386,
                   "focus": false,
-                  "end": 1694568362939
+                  "end": 1694666797390
                 }
               },
               {
@@ -998,6 +998,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694666607156"
+    "version": "1694666797542"
   }
 }
