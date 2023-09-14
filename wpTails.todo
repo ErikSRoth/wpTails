@@ -358,6 +358,116 @@
                   "done": false,
                   "start": 1694616286031
                 }
+              },
+              {
+                "key": 1694658918539,
+                "children": [],
+                "todo": {
+                  "content": "cssnano",
+                  "id": 1694658918539,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694658918539
+                }
+              },
+              {
+                "key": 1694658987050,
+                "children": [],
+                "todo": {
+                  "content": "del",
+                  "id": 1694658987050,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694658987050
+                }
+              },
+              {
+                "key": 1694659004824,
+                "children": [],
+                "todo": {
+                  "content": "gulp-babel",
+                  "id": 1694659004824,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659004825
+                }
+              },
+              {
+                "key": 1694659025803,
+                "children": [],
+                "todo": {
+                  "content": "gulp-postcss",
+                  "id": 1694659025803,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659025803
+                }
+              },
+              {
+                "key": 1694659034811,
+                "children": [],
+                "todo": {
+                  "content": "gulp-purgecss",
+                  "id": 1694659034811,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659034812
+                }
+              },
+              {
+                "key": 1694659058112,
+                "children": [],
+                "todo": {
+                  "content": "stylelint",
+                  "id": 1694659058112,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659058112
+                }
+              },
+              {
+                "key": 1694659066197,
+                "children": [],
+                "todo": {
+                  "content": "stylelint-config-wordpress",
+                  "id": 1694659066197,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659066197
+                }
+              },
+              {
+                "key": 1694659090198,
+                "children": [],
+                "todo": {
+                  "content": "gulp-rename",
+                  "id": 1694659090198,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659090198
+                }
+              },
+              {
+                "key": 1694659099623,
+                "children": [],
+                "todo": {
+                  "content": "gulp-wp-pot",
+                  "id": 1694659099623,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659099623
+                }
+              },
+              {
+                "key": 1694659119117,
+                "children": [],
+                "todo": {
+                  "content": "gulp-uglify",
+                  "id": 1694659119117,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659119118
+                }
               }
             ],
             "todo": {
@@ -652,6 +762,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694616424940"
+    "version": "1694659125352"
   }
 }
