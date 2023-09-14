@@ -114,8 +114,10 @@
                   "content": "add Archives folder",
                   "id": 1694567861265,
                   "level": "default",
-                  "done": false,
-                  "start": 1694567861266
+                  "done": true,
+                  "start": 1694567861266,
+                  "focus": false,
+                  "end": 1694660997212
                 }
               },
               {
@@ -894,6 +896,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694660395607"
+    "version": "1694660997404"
   }
 }
