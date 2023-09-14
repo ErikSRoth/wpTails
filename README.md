@@ -1,15 +1,26 @@
-<center>wpTails Header Image Here</center>
+<p align="center">wpTails Header Image Here</p>
 
-### <center>A WordPress Theme Development Environment for use with TailwindCSS</center>
+<p align="center">wpTails badges Go Here</p>
 
----
-# Introduction
+## <p align="center">wpTails:  A Modern WordPress Theme Development Environment</p>
 
----
-# Installation
-
----
-
-# Usage and Configuration
+## 
+### Introduction
 
 ---
+### Installation
+
+---
+### Usage and Configuration
+
+---
+### Licenses
+
+---
+### Credits
+
+---
+### Contributors
+
+---
+###### <p align="center">Copyright ©2022-2023 [Erik S. Roth](eriksroth@gmail.com) and the wpTails Contributors</p>
