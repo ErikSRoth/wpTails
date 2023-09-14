@@ -8,6 +8,28 @@
             "key": 1692148407005,
             "children": [
               {
+                "key": 1694567174682,
+                "children": [],
+                "todo": {
+                  "content": "Add CHANGELOG file",
+                  "id": 1694567174682,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694567174682
+                }
+              },
+              {
+                "key": 1694659937657,
+                "children": [],
+                "todo": {
+                  "content": "add travis ci file",
+                  "id": 1694659937657,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659937657
+                }
+              },
+              {
                 "key": 1692155843769,
                 "children": [],
                 "todo": {
@@ -70,17 +92,6 @@
                   "start": 1694567173489,
                   "focus": false,
                   "end": 1694616414118
-                }
-              },
-              {
-                "key": 1694567174682,
-                "children": [],
-                "todo": {
-                  "content": "Add CHANGELOG file",
-                  "id": 1694567174682,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694567174682
                 }
               },
               {
@@ -172,17 +183,6 @@
                   "start": 1694659239725,
                   "focus": false,
                   "end": 1694661270175
-                }
-              },
-              {
-                "key": 1694659937657,
-                "children": [],
-                "todo": {
-                  "content": "add travis ci file",
-                  "id": 1694659937657,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694659937657
                 }
               },
               {
@@ -362,45 +362,6 @@
                 }
               },
               {
-                "key": 1694568526341,
-                "children": [],
-                "todo": {
-                  "content": "@babel/core",
-                  "id": 1694568526341,
-                  "level": "default",
-                  "done": true,
-                  "start": 1694568526342,
-                  "focus": false,
-                  "end": 1694662731192
-                }
-              },
-              {
-                "key": 1694616209338,
-                "children": [],
-                "todo": {
-                  "content": "@babel/preset-env",
-                  "id": 1694616209338,
-                  "level": "default",
-                  "done": true,
-                  "start": 1694616209338,
-                  "focus": false,
-                  "end": 1694666310930
-                }
-              },
-              {
-                "key": 1694616235939,
-                "children": [],
-                "todo": {
-                  "content": "@babel/register",
-                  "id": 1694616235939,
-                  "level": "default",
-                  "done": true,
-                  "start": 1694616235939,
-                  "focus": false,
-                  "end": 1694666312548
-                }
-              },
-              {
                 "key": 1694616265780,
                 "children": [],
                 "todo": {
@@ -542,6 +503,45 @@
                   "done": false,
                   "start": 1694659119118
                 }
+              },
+              {
+                "key": 1694568526341,
+                "children": [],
+                "todo": {
+                  "content": "@babel/core",
+                  "id": 1694568526341,
+                  "level": "default",
+                  "done": true,
+                  "start": 1694568526342,
+                  "focus": false,
+                  "end": 1694662731192
+                }
+              },
+              {
+                "key": 1694616209338,
+                "children": [],
+                "todo": {
+                  "content": "@babel/preset-env",
+                  "id": 1694616209338,
+                  "level": "default",
+                  "done": true,
+                  "start": 1694616209338,
+                  "focus": false,
+                  "end": 1694666310930
+                }
+              },
+              {
+                "key": 1694616235939,
+                "children": [],
+                "todo": {
+                  "content": "@babel/register",
+                  "id": 1694616235939,
+                  "level": "default",
+                  "done": true,
+                  "start": 1694616235939,
+                  "focus": false,
+                  "end": 1694666312548
+                }
               }
             ],
             "todo": {
@@ -567,7 +567,19 @@
       },
       {
         "key": 1692148376553,
-        "children": [],
+        "children": [
+          {
+            "key": 1694670086087,
+            "children": [],
+            "todo": {
+              "content": "wordpress scripts",
+              "id": 1694670086087,
+              "level": "default",
+              "done": false,
+              "start": 1694670086087
+            }
+          }
+        ],
         "todo": {
           "content": "Setup Composer and add scripts",
           "id": 1692148376553,
@@ -1024,7 +1036,8 @@
       1694567441256,
       1692155758538,
       1694660070047,
-      1692155777567
+      1692155777567,
+      1692148376553
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
@@ -1037,6 +1050,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694668848414"
+    "version": "1694670096722"
   }
 }
