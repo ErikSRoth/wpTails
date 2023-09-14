@@ -163,6 +163,39 @@
                   "focus": false,
                   "end": 1694568362939
                 }
+              },
+              {
+                "key": 1694659239725,
+                "children": [],
+                "todo": {
+                  "content": "add gulp folder",
+                  "id": 1694659239725,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659239725
+                }
+              },
+              {
+                "key": 1694659937657,
+                "children": [],
+                "todo": {
+                  "content": "add travis ci file",
+                  "id": 1694659937657,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659937657
+                }
+              },
+              {
+                "key": 1694660061182,
+                "children": [],
+                "todo": {
+                  "content": "add docs folder",
+                  "id": 1694660061182,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694660061182
+                }
               }
             ],
             "todo": {
@@ -252,6 +285,17 @@
               "level": "default",
               "done": false,
               "start": 1694568458193
+            }
+          },
+          {
+            "key": 1694660006743,
+            "children": [],
+            "todo": {
+              "content": "create screenshot image",
+              "id": 1694660006743,
+              "level": "default",
+              "done": false,
+              "start": 1694660006743
             }
           }
         ],
@@ -515,6 +559,61 @@
               "done": false,
               "start": 1694567757829
             }
+          },
+          {
+            "key": 1694660211212,
+            "children": [],
+            "todo": {
+              "content": "Clean JS",
+              "id": 1694660211212,
+              "level": "default",
+              "done": false,
+              "start": 1694660211212
+            }
+          },
+          {
+            "key": 1694660225068,
+            "children": [],
+            "todo": {
+              "content": "Clean CSS",
+              "id": 1694660225068,
+              "level": "default",
+              "done": false,
+              "start": 1694660225068
+            }
+          },
+          {
+            "key": 1694660232145,
+            "children": [],
+            "todo": {
+              "content": "Clean and Archive previous release veersion",
+              "id": 1694660232145,
+              "level": "default",
+              "done": false,
+              "start": 1694660232145
+            }
+          },
+          {
+            "key": 1694660287583,
+            "children": [],
+            "todo": {
+              "content": "browsersync",
+              "id": 1694660287583,
+              "level": "default",
+              "done": false,
+              "start": 1694660287583
+            }
+          },
+          {
+            "key": 1694660388391,
+            "children": [],
+            "todo": {
+              "content": "watch and reload",
+              "id": 1694660388391,
+              "level": "default",
+              "done": false,
+              "start": 1694660388391
+            }
           }
         ],
         "todo": {
@@ -595,6 +694,28 @@
               "level": "default",
               "done": false,
               "start": 1694567648622
+            }
+          },
+          {
+            "key": 1694660351913,
+            "children": [],
+            "todo": {
+              "content": "add custom scripts",
+              "id": 1694660351913,
+              "level": "default",
+              "done": false,
+              "start": 1694660351913
+            }
+          },
+          {
+            "key": 1694660363046,
+            "children": [],
+            "todo": {
+              "content": "add custom styles",
+              "id": 1694660363046,
+              "level": "default",
+              "done": false,
+              "start": 1694660363046
             }
           }
         ],
@@ -728,6 +849,17 @@
           "done": false,
           "start": 1692365598681
         }
+      },
+      {
+        "key": 1694660070047,
+        "children": [],
+        "todo": {
+          "content": "create docs",
+          "id": 1694660070047,
+          "level": "default",
+          "done": false,
+          "start": 1694660070047
+        }
       }
     ],
     "expandKeys": [
@@ -762,6 +894,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694659125352"
+    "version": "1694660395607"
   }
 }
