@@ -1,26 +1,37 @@
 {
   "name": "wptails",
   "version": "1.0.0",
-  "description": "...",
-  "main": "...",
-  "scripts": {
-    "test": "..."
+  "license": "MIT",
+  "description": "wpTails is a WordPress theme development enviroment based on the TailwindCSS framework, with a modern gulp powered workflow.",
+  "main": "gulpfile.babel.js",
+  "keywords": [
+    "wordpress",
+    "tailwindcss"
+  ],
+  "author": {
+    "name": "Erik Roth",
+    "email": "eriksroth@gmail.com",
+    "url": "https://github.com/ErikSRoth"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ErikSRoth/wpTails.git"
+    "url": "https://github.com/ErikSRoth/wpTails"
   },
-  "keywords": [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5"
-  ],
-  "author": "Erik Roth",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ErikSRoth/wpTails/issues"
   },
-  "homepage": "https://github.com/ErikSRoth/wpTails#readme"
+  "directories": {
+    "test": "tests",
+    "config": "configs",
+    "doc": "documentation"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/register": "^7.22.15"
+  },
+  "scripts": {
+    "dev": "...",
+    "test": "..."
+  }
 }

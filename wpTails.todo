@@ -17,7 +17,7 @@
                   "done": true,
                   "start": 1692155843769,
                   "focus": false,
-                  "end": 1694571331937
+                  "end": 1694616375520
                 }
               },
               {
@@ -30,7 +30,7 @@
                   "done": true,
                   "start": 1692155758538,
                   "focus": false,
-                  "end": 1694571329263
+                  "end": 1694616422281
                 }
               },
               {
@@ -40,10 +40,10 @@
                   "content": "Create cSpell and dictionary files",
                   "id": 1692240775996,
                   "level": "default",
-                  "done": false,
+                  "done": true,
                   "start": 1692240775996,
                   "focus": false,
-                  "end": 1692240795660
+                  "end": 1694616424796
                 }
               },
               {
@@ -53,8 +53,10 @@
                   "content": "add README file",
                   "id": 1694567171660,
                   "level": "default",
-                  "done": false,
-                  "start": 1694567171660
+                  "done": true,
+                  "start": 1694567171660,
+                  "focus": false,
+                  "end": 1694616417915
                 }
               },
               {
@@ -67,7 +69,7 @@
                   "done": true,
                   "start": 1694567173489,
                   "focus": false,
-                  "end": 1694571343484
+                  "end": 1694616414118
                 }
               },
               {
@@ -88,8 +90,10 @@
                   "content": "add .gitignore",
                   "id": 1694567354730,
                   "level": "default",
-                  "done": false,
-                  "start": 1694567354730
+                  "done": true,
+                  "start": 1694567354730,
+                  "focus": false,
+                  "end": 1694616407896
                 }
               },
               {
@@ -99,8 +103,10 @@
                   "content": "add Config folder",
                   "id": 1694567852218,
                   "level": "default",
-                  "done": false,
-                  "start": 1694567852218
+                  "done": true,
+                  "start": 1694567852218,
+                  "focus": false,
+                  "end": 1694661176468
                 }
               },
               {
@@ -110,8 +116,10 @@
                   "content": "add Archives folder",
                   "id": 1694567861265,
                   "level": "default",
-                  "done": false,
-                  "start": 1694567861266
+                  "done": true,
+                  "start": 1694567861266,
+                  "focus": false,
+                  "end": 1694660997212
                 }
               },
               {
@@ -121,8 +129,10 @@
                   "content": "add release folder",
                   "id": 1694567871577,
                   "level": "default",
-                  "done": false,
-                  "start": 1694567871577
+                  "done": true,
+                  "start": 1694567871577,
+                  "focus": false,
+                  "end": 1694668315961
                 }
               },
               {
@@ -132,65 +142,60 @@
                   "content": "add Tests folder",
                   "id": 1694567919507,
                   "level": "default",
-                  "done": false,
-                  "start": 1694567919507
-                }
-              },
-              {
-                "key": 1694568155459,
-                "children": [],
-                "todo": {
-                  "content": "add assets folder",
-                  "id": 1694568155459,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694568155459
+                  "done": true,
+                  "start": 1694567919507,
+                  "focus": false,
+                  "end": 1694661079264
                 }
               },
               {
                 "key": 1694568173385,
                 "children": [],
                 "todo": {
-                  "content": "add dev folder",
+                  "content": "add dev folder (src)",
                   "id": 1694568173385,
                   "level": "default",
-                  "done": false,
+                  "done": true,
                   "start": 1694568173386,
                   "focus": false,
-                  "end": 1694568362939
+                  "end": 1694666797390
                 }
               },
               {
-                "key": 1694571373177,
+                "key": 1694659239725,
                 "children": [],
                 "todo": {
-                  "content": "add .editorconfig",
-                  "id": 1694571373177,
+                  "content": "add gulp folder",
+                  "id": 1694659239725,
                   "level": "default",
-                  "done": false,
-                  "start": 1694571373177
+                  "done": true,
+                  "start": 1694659239725,
+                  "focus": false,
+                  "end": 1694661270175
                 }
               },
               {
-                "key": 1694573748669,
+                "key": 1694659937657,
                 "children": [],
                 "todo": {
-                  "content": "add functions folder",
-                  "id": 1694573748669,
+                  "content": "add travis ci file",
+                  "id": 1694659937657,
                   "level": "default",
                   "done": false,
-                  "start": 1694573748669
+                  "start": 1694659937657
                 }
               },
               {
-                "key": 1694573762673,
+                "key": 1694660061182,
                 "children": [],
                 "todo": {
-                  "content": "add templates folder with subfolders for specific types of templates- i.e. headers, footers, etc.",
-                  "id": 1694573762673,
+                  "content": "add docs folder",
+                  "id": 1694660061182,
                   "level": "default",
-                  "done": false,
-                  "start": 1694573762673
+                  "done": true,
+                  "start": 1694660061182,
+                  "focus": false,
+                  "end": 1694666606966
                 }
               }
             ],
@@ -206,7 +211,30 @@
           },
           {
             "key": 1692155777567,
-            "children": [],
+            "children": [
+              {
+                "key": 1694668809110,
+                "children": [],
+                "todo": {
+                  "content": "Changelog MD for wpTails",
+                  "id": 1694668809110,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694668809110
+                }
+              },
+              {
+                "key": 1694668835864,
+                "children": [],
+                "todo": {
+                  "content": "changelog txt word WP theme",
+                  "id": 1694668835864,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694668835864
+                }
+              }
+            ],
             "todo": {
               "content": "Create Changelog auto update scripting",
               "id": 1692155777567,
@@ -284,14 +312,14 @@
             }
           },
           {
-            "key": 1694573086168,
+            "key": 1694660006743,
             "children": [],
             "todo": {
-              "content": "Create graphic header for readme file",
-              "id": 1694573086168,
+              "content": "create screenshot image",
+              "id": 1694660006743,
               "level": "default",
               "done": false,
-              "start": 1694573086168
+              "start": 1694660006743
             }
           }
         ],
@@ -304,62 +332,6 @@
         }
       },
       {
-        "key": 1694572874817,
-        "children": [
-          {
-            "key": 1694572898317,
-            "children": [],
-            "todo": {
-              "content": "babel",
-              "id": 1694572898317,
-              "level": "default",
-              "done": false,
-              "start": 1694572898317
-            }
-          },
-          {
-            "key": 1694572908275,
-            "children": [],
-            "todo": {
-              "content": "eslint",
-              "id": 1694572908275,
-              "level": "default",
-              "done": false,
-              "start": 1694572908275
-            }
-          },
-          {
-            "key": 1694573305473,
-            "children": [],
-            "todo": {
-              "content": "browser list",
-              "id": 1694573305473,
-              "level": "default",
-              "done": false,
-              "start": 1694573305473
-            }
-          },
-          {
-            "key": 1694573317156,
-            "children": [],
-            "todo": {
-              "content": "prettier",
-              "id": 1694573317156,
-              "level": "default",
-              "done": false,
-              "start": 1694573317156
-            }
-          }
-        ],
-        "todo": {
-          "content": "Add Script Files",
-          "id": 1694572874817,
-          "level": "default",
-          "done": false,
-          "start": 1694572874817
-        }
-      },
-      {
         "key": 1692148365486,
         "children": [
           {
@@ -369,10 +341,10 @@
               "content": "Basic NPM Init",
               "id": 1692155729553,
               "level": "default",
-              "done": true,
+              "done": false,
               "start": 1692155729553,
               "focus": false,
-              "end": 1694572626390
+              "end": 1692365382758
             }
           },
           {
@@ -382,7 +354,7 @@
                 "key": 1694567441256,
                 "children": [],
                 "todo": {
-                  "content": "Gulp",
+                  "content": "gulp",
                   "id": 1694567441256,
                   "level": "default",
                   "done": false,
@@ -393,99 +365,182 @@
                 "key": 1694568526341,
                 "children": [],
                 "todo": {
-                  "content": "Babel Core",
+                  "content": "@babel/core",
                   "id": 1694568526341,
                   "level": "default",
-                  "done": false,
-                  "start": 1694568526342
+                  "done": true,
+                  "start": 1694568526342,
+                  "focus": false,
+                  "end": 1694662731192
                 }
               },
               {
-                "key": 1694572764262,
+                "key": 1694616209338,
                 "children": [],
                 "todo": {
-                  "content": "Babel Preset-env",
-                  "id": 1694572764262,
+                  "content": "@babel/preset-env",
+                  "id": 1694616209338,
                   "level": "default",
-                  "done": false,
-                  "start": 1694572764262
+                  "done": true,
+                  "start": 1694616209338,
+                  "focus": false,
+                  "end": 1694666310930
                 }
               },
               {
-                "key": 1694572787889,
+                "key": 1694616235939,
                 "children": [],
                 "todo": {
-                  "content": "Babel register",
-                  "id": 1694572787889,
+                  "content": "@babel/register",
+                  "id": 1694616235939,
                   "level": "default",
-                  "done": false,
-                  "start": 1694572787889
+                  "done": true,
+                  "start": 1694616235939,
+                  "focus": false,
+                  "end": 1694666312548
                 }
               },
               {
-                "key": 1694572800048,
-                "children": [],
-                "todo": {
-                  "content": "autoprefixer",
-                  "id": 1694572800048,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694572800048
-                }
-              },
-              {
-                "key": 1694572810790,
+                "key": 1694616265780,
                 "children": [],
                 "todo": {
                   "content": "tailwindcss",
-                  "id": 1694572810790,
+                  "id": 1694616265780,
                   "level": "default",
                   "done": false,
-                  "start": 1694572810790
+                  "start": 1694616265780
                 }
               },
               {
-                "key": 1694573030869,
+                "key": 1694616277895,
+                "children": [],
+                "todo": {
+                  "content": "autoprefixer",
+                  "id": 1694616277895,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694616277895
+                }
+              },
+              {
+                "key": 1694616286031,
                 "children": [],
                 "todo": {
                   "content": "browsersync",
-                  "id": 1694573030869,
+                  "id": 1694616286031,
                   "level": "default",
                   "done": false,
-                  "start": 1694573030869
+                  "start": 1694616286031
                 }
               },
               {
-                "key": 1694573218158,
+                "key": 1694658918539,
                 "children": [],
                 "todo": {
-                  "content": "gulp-clean",
-                  "id": 1694573218158,
+                  "content": "cssnano",
+                  "id": 1694658918539,
                   "level": "default",
                   "done": false,
-                  "start": 1694573218159
+                  "start": 1694658918539
                 }
               },
               {
-                "key": 1694573226071,
+                "key": 1694658987050,
                 "children": [],
                 "todo": {
-                  "content": "gulp-clean-css",
-                  "id": 1694573226071,
+                  "content": "del",
+                  "id": 1694658987050,
                   "level": "default",
                   "done": false,
-                  "start": 1694573226071
+                  "start": 1694658987050
                 }
               },
               {
-                "key": 1694573245583,
+                "key": 1694659004824,
                 "children": [],
                 "todo": {
-                  "content": "gulp-concat",
-                  "id": 1694573245583,
+                  "content": "gulp-babel",
+                  "id": 1694659004824,
                   "level": "default",
                   "done": false,
-                  "start": 1694573245583
+                  "start": 1694659004825
+                }
+              },
+              {
+                "key": 1694659025803,
+                "children": [],
+                "todo": {
+                  "content": "gulp-postcss",
+                  "id": 1694659025803,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659025803
+                }
+              },
+              {
+                "key": 1694659034811,
+                "children": [],
+                "todo": {
+                  "content": "gulp-purgecss",
+                  "id": 1694659034811,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659034812
+                }
+              },
+              {
+                "key": 1694659058112,
+                "children": [],
+                "todo": {
+                  "content": "stylelint",
+                  "id": 1694659058112,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659058112
+                }
+              },
+              {
+                "key": 1694659066197,
+                "children": [],
+                "todo": {
+                  "content": "stylelint-config-wordpress",
+                  "id": 1694659066197,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659066197
+                }
+              },
+              {
+                "key": 1694659090198,
+                "children": [],
+                "todo": {
+                  "content": "gulp-rename",
+                  "id": 1694659090198,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659090198
+                }
+              },
+              {
+                "key": 1694659099623,
+                "children": [],
+                "todo": {
+                  "content": "gulp-wp-pot",
+                  "id": 1694659099623,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659099623
+                }
+              },
+              {
+                "key": 1694659119117,
+                "children": [],
+                "todo": {
+                  "content": "gulp-uglify",
+                  "id": 1694659119117,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694659119118
                 }
               }
             ],
@@ -497,139 +552,6 @@
               "start": 1692155745707,
               "focus": false,
               "end": 1692365385348
-            }
-          },
-          {
-            "key": 1694572695526,
-            "children": [
-              {
-                "key": 1694573368795,
-                "children": [],
-                "todo": {
-                  "content": "dev script",
-                  "id": 1694573368795,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573368795
-                }
-              },
-              {
-                "key": 1694573384882,
-                "children": [],
-                "todo": {
-                  "content": "build script",
-                  "id": 1694573384882,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573384882
-                }
-              },
-              {
-                "key": 1694573391131,
-                "children": [],
-                "todo": {
-                  "content": "eslint scripts",
-                  "id": 1694573391131,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573391131
-                }
-              },
-              {
-                "key": 1694573400827,
-                "children": [],
-                "todo": {
-                  "content": "watch script",
-                  "id": 1694573400827,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573400827
-                }
-              },
-              {
-                "key": 1694573425408,
-                "children": [],
-                "todo": {
-                  "content": "build production",
-                  "id": 1694573425408,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573425408
-                }
-              },
-              {
-                "key": 1694573436784,
-                "children": [],
-                "todo": {
-                  "content": "test build tools",
-                  "id": 1694573436784,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573436784
-                }
-              },
-              {
-                "key": 1694573452265,
-                "children": [],
-                "todo": {
-                  "content": "test theme",
-                  "id": 1694573452265,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573452265
-                }
-              },
-              {
-                "key": 1694573459787,
-                "children": [],
-                "todo": {
-                  "content": "create child theme",
-                  "id": 1694573459787,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573459787
-                }
-              },
-              {
-                "key": 1694573478268,
-                "children": [],
-                "todo": {
-                  "content": "bundle production main theme and child",
-                  "id": 1694573478268,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573478268
-                }
-              },
-              {
-                "key": 1694573515996,
-                "children": [],
-                "todo": {
-                  "content": "script to install npm and composer dependancies",
-                  "id": 1694573515996,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573515996
-                }
-              },
-              {
-                "key": 1694573568796,
-                "children": [],
-                "todo": {
-                  "content": "test and release production bundle",
-                  "id": 1694573568796,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694573568796
-                }
-              }
-            ],
-            "todo": {
-              "content": "add run scripts",
-              "id": 1694572695526,
-              "level": "default",
-              "done": false,
-              "start": 1694572695526
             }
           }
         ],
@@ -669,25 +591,58 @@
             }
           },
           {
-            "key": 1694572969883,
+            "key": 1694660211212,
             "children": [],
             "todo": {
-              "content": "cleanup function - clean build directories",
-              "id": 1694572969883,
+              "content": "Clean JS",
+              "id": 1694660211212,
               "level": "default",
               "done": false,
-              "start": 1694572969883
+              "start": 1694660211212
             }
           },
           {
-            "key": 1694573005145,
+            "key": 1694660225068,
             "children": [],
             "todo": {
-              "content": "gulp variables config file",
-              "id": 1694573005145,
+              "content": "Clean CSS",
+              "id": 1694660225068,
               "level": "default",
               "done": false,
-              "start": 1694573005145
+              "start": 1694660225068
+            }
+          },
+          {
+            "key": 1694660232145,
+            "children": [],
+            "todo": {
+              "content": "Clean and Archive previous release veersion",
+              "id": 1694660232145,
+              "level": "default",
+              "done": false,
+              "start": 1694660232145
+            }
+          },
+          {
+            "key": 1694660287583,
+            "children": [],
+            "todo": {
+              "content": "browsersync",
+              "id": 1694660287583,
+              "level": "default",
+              "done": false,
+              "start": 1694660287583
+            }
+          },
+          {
+            "key": 1694660388391,
+            "children": [],
+            "todo": {
+              "content": "watch and reload",
+              "id": 1694660388391,
+              "level": "default",
+              "done": false,
+              "start": 1694660388391
             }
           }
         ],
@@ -747,14 +702,102 @@
             }
           },
           {
-            "key": 1694573620226,
+            "key": 1694661372932,
             "children": [],
             "todo": {
-              "content": "dual license file",
-              "id": 1694573620226,
+              "content": "add fonts folder",
+              "id": 1694661372932,
               "level": "default",
               "done": false,
-              "start": 1694573620226
+              "start": 1694661372932
+            }
+          },
+          {
+            "key": 1694661392148,
+            "children": [],
+            "todo": {
+              "content": "add languages folder",
+              "id": 1694661392148,
+              "level": "default",
+              "done": false,
+              "start": 1694661392148
+            }
+          },
+          {
+            "key": 1694661405385,
+            "children": [],
+            "todo": {
+              "content": "add assets folder",
+              "id": 1694661405385,
+              "level": "default",
+              "done": false,
+              "start": 1694661405385
+            }
+          },
+          {
+            "key": 1694661500194,
+            "children": [],
+            "todo": {
+              "content": "add inc folder",
+              "id": 1694661500194,
+              "level": "default",
+              "done": false,
+              "start": 1694661500195
+            }
+          },
+          {
+            "key": 1694661510015,
+            "children": [],
+            "todo": {
+              "content": "add images folder - DEV",
+              "id": 1694661510015,
+              "level": "default",
+              "done": false,
+              "start": 1694661510015
+            }
+          },
+          {
+            "key": 1694661518142,
+            "children": [],
+            "todo": {
+              "content": "add svg folder - DEV",
+              "id": 1694661518142,
+              "level": "default",
+              "done": false,
+              "start": 1694661518142
+            }
+          },
+          {
+            "key": 1694661540972,
+            "children": [],
+            "todo": {
+              "content": "add scss folder - DEV",
+              "id": 1694661540972,
+              "level": "default",
+              "done": false,
+              "start": 1694661540972
+            }
+          },
+          {
+            "key": 1694661551427,
+            "children": [],
+            "todo": {
+              "content": "add JS folder - DEV",
+              "id": 1694661551427,
+              "level": "default",
+              "done": false,
+              "start": 1694661551427
+            }
+          },
+          {
+            "key": 1694661574466,
+            "children": [],
+            "todo": {
+              "content": "add templates folder",
+              "id": 1694661574466,
+              "level": "default",
+              "done": false,
+              "start": 1694661574467
             }
           }
         ],
@@ -765,7 +808,7 @@
           "done": false,
           "start": 1692156947451,
           "focus": false,
-          "end": 1694567612432
+          "end": 1694661452497
         }
       },
       {
@@ -783,47 +826,25 @@
             }
           },
           {
-            "key": 1694573660130,
+            "key": 1694660351913,
             "children": [],
             "todo": {
-              "content": "set directories in functions",
-              "id": 1694573660130,
+              "content": "add custom scripts",
+              "id": 1694660351913,
               "level": "default",
               "done": false,
-              "start": 1694573660130
+              "start": 1694660351913
             }
           },
           {
-            "key": 1694573683831,
+            "key": 1694660363046,
             "children": [],
             "todo": {
-              "content": "add styles include",
-              "id": 1694573683831,
+              "content": "add custom styles",
+              "id": 1694660363046,
               "level": "default",
               "done": false,
-              "start": 1694573683831
-            }
-          },
-          {
-            "key": 1694573714973,
-            "children": [],
-            "todo": {
-              "content": "add scripts include",
-              "id": 1694573714973,
-              "level": "default",
-              "done": false,
-              "start": 1694573714973
-            }
-          },
-          {
-            "key": 1694573724271,
-            "children": [],
-            "todo": {
-              "content": "build navwalker include",
-              "id": 1694573724271,
-              "level": "default",
-              "done": false,
-              "start": 1694573724271
+              "start": 1694660363046
             }
           }
         ],
@@ -957,6 +978,29 @@
           "done": false,
           "start": 1692365598681
         }
+      },
+      {
+        "key": 1694660070047,
+        "children": [
+          {
+            "key": 1694668657214,
+            "children": [],
+            "todo": {
+              "content": "index page",
+              "id": 1694668657214,
+              "level": "default",
+              "done": false,
+              "start": 1694668657214
+            }
+          }
+        ],
+        "todo": {
+          "content": "create docs",
+          "id": 1694660070047,
+          "level": "default",
+          "done": false,
+          "start": 1694660070047
+        }
       }
     ],
     "expandKeys": [
@@ -974,11 +1018,13 @@
       1694567720827,
       1694568173385,
       1692148365486,
+      1694568487817,
       1692148407005,
       1692155852216,
-      1694568487817,
-      1694572874817,
-      1694572695526
+      1694567441256,
+      1692155758538,
+      1694660070047,
+      1692155777567
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
@@ -991,6 +1037,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694573801661"
+    "version": "1694668848414"
   }
 }

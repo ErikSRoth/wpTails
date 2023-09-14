@@ -24,7 +24,13 @@
 !.gitkeep
 
 # Project Folders
-
+!/archives
+!/configs
+!/documentation
+!/gulp
+!/release
+!/src
+!/tests
 
 
 # Project Files
