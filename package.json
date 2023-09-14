@@ -1,0 +1,22 @@
+{
+  "name": "wptails",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "gulpfile.babel.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "..."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://"
+  },
+  "keywords": [
+    "wordpress",
+    "tailwindcss"
+  ],
+  "author": "Erik  Roth",
+  "license": "MIT"
+}
