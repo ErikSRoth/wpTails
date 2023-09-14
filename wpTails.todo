@@ -698,8 +698,10 @@
               "content": "Create blank functions file",
               "id": 1694568238818,
               "level": "default",
-              "done": false,
-              "start": 1694568238818
+              "done": true,
+              "start": 1694568238818,
+              "focus": false,
+              "end": 1694670356856
             }
           },
           {
@@ -786,8 +788,10 @@
               "content": "add scss folder - DEV",
               "id": 1694661540972,
               "level": "default",
-              "done": false,
-              "start": 1694661540972
+              "done": true,
+              "start": 1694661540972,
+              "focus": false,
+              "end": 1694670435174
             }
           },
           {
@@ -1050,6 +1054,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694670096722"
+    "version": "1694670435374"
   }
 }
