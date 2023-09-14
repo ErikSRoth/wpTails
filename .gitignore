@@ -43,6 +43,7 @@
 
 # Theme Files and Folders
 !/**/*.php
+!/**/*.scss
 
 # vsCode Workspace
 !wpTails.code-workspace
