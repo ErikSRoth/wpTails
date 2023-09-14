@@ -211,7 +211,30 @@
           },
           {
             "key": 1692155777567,
-            "children": [],
+            "children": [
+              {
+                "key": 1694668809110,
+                "children": [],
+                "todo": {
+                  "content": "Changelog MD for wpTails",
+                  "id": 1694668809110,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694668809110
+                }
+              },
+              {
+                "key": 1694668835864,
+                "children": [],
+                "todo": {
+                  "content": "changelog txt word WP theme",
+                  "id": 1694668835864,
+                  "level": "default",
+                  "done": false,
+                  "start": 1694668835864
+                }
+              }
+            ],
             "todo": {
               "content": "Create Changelog auto update scripting",
               "id": 1692155777567,
@@ -1000,7 +1023,8 @@
       1692155852216,
       1694567441256,
       1692155758538,
-      1694660070047
+      1694660070047,
+      1692155777567
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
@@ -1013,6 +1037,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694668664271"
+    "version": "1694668848414"
   }
 }
