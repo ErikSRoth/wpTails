@@ -147,17 +147,6 @@
                 }
               },
               {
-                "key": 1694568155459,
-                "children": [],
-                "todo": {
-                  "content": "add assets folder",
-                  "id": 1694568155459,
-                  "level": "default",
-                  "done": false,
-                  "start": 1694568155459
-                }
-              },
-              {
                 "key": 1694568173385,
                 "children": [],
                 "todo": {
@@ -678,6 +667,105 @@
               "done": false,
               "start": 1694568256605
             }
+          },
+          {
+            "key": 1694661372932,
+            "children": [],
+            "todo": {
+              "content": "add fonts folder",
+              "id": 1694661372932,
+              "level": "default",
+              "done": false,
+              "start": 1694661372932
+            }
+          },
+          {
+            "key": 1694661392148,
+            "children": [],
+            "todo": {
+              "content": "add languages folder",
+              "id": 1694661392148,
+              "level": "default",
+              "done": false,
+              "start": 1694661392148
+            }
+          },
+          {
+            "key": 1694661405385,
+            "children": [],
+            "todo": {
+              "content": "add assets folder",
+              "id": 1694661405385,
+              "level": "default",
+              "done": false,
+              "start": 1694661405385
+            }
+          },
+          {
+            "key": 1694661500194,
+            "children": [],
+            "todo": {
+              "content": "add inc folder",
+              "id": 1694661500194,
+              "level": "default",
+              "done": false,
+              "start": 1694661500195
+            }
+          },
+          {
+            "key": 1694661510015,
+            "children": [],
+            "todo": {
+              "content": "add images folder - DEV",
+              "id": 1694661510015,
+              "level": "default",
+              "done": false,
+              "start": 1694661510015
+            }
+          },
+          {
+            "key": 1694661518142,
+            "children": [],
+            "todo": {
+              "content": "add svg folder - DEV",
+              "id": 1694661518142,
+              "level": "default",
+              "done": false,
+              "start": 1694661518142
+            }
+          },
+          {
+            "key": 1694661540972,
+            "children": [],
+            "todo": {
+              "content": "add scss folder - DEV",
+              "id": 1694661540972,
+              "level": "default",
+              "done": false,
+              "start": 1694661540972
+            }
+          },
+          {
+            "key": 1694661551427,
+            "children": [],
+            "todo": {
+              "content": "add JS folder - DEV",
+              "id": 1694661551427,
+              "level": "default",
+              "done": false,
+              "start": 1694661551427
+            }
+          },
+          {
+            "key": 1694661574466,
+            "children": [],
+            "todo": {
+              "content": "add templates folder",
+              "id": 1694661574466,
+              "level": "default",
+              "done": false,
+              "start": 1694661574467
+            }
           }
         ],
         "todo": {
@@ -687,7 +775,7 @@
           "done": false,
           "start": 1692156947451,
           "focus": false,
-          "end": 1694567612432
+          "end": 1694661452497
         }
       },
       {
@@ -902,6 +990,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694661270373"
+    "version": "1694661579522"
   }
 }
