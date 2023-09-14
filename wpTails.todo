@@ -801,8 +801,10 @@
               "content": "add JS folder - DEV",
               "id": 1694661551427,
               "level": "default",
-              "done": false,
-              "start": 1694661551427
+              "done": true,
+              "start": 1694661551427,
+              "focus": false,
+              "end": 1694670499017
             }
           },
           {
@@ -1054,6 +1056,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694670435374"
+    "version": "1694670499220"
   }
 }
