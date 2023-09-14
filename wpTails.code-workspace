@@ -4,7 +4,22 @@
 			"path": "."
 		}
 	],
-	"settings": {},
+	"settings": {
+		"editor.fontSize": 14,
+		"editor.wordWrap": "on",
+		"files.exclude": {
+			"**/.git": false
+		},
+		"editor.guides.bracketPairs": true,
+		"editor.hover.delay": 500,
+		"editor.minimap.scale": 2,
+		"workbench.editor.autoLockGroups": {
+			"default": true
+		},
+		"explorer.fileNesting.enabled": false,
+		"scm.alwaysShowRepositories": true,
+		"scm.defaultViewMode": "tree"
+	},
 	"extensions": {
 		"recommendations": [
 			"github.vscode-pull-request-github",
