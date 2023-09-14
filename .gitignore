@@ -38,9 +38,11 @@
 !package.json
 !LICENSE.md
 !README.md
-!/**/*.php
 !wpTails-dict.txt
 !wpTails.todo
+
+# Theme Files and Folders
+!/**/*.php
 
 # vsCode Workspace
 !wpTails.code-workspace
