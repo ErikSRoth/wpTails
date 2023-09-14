@@ -103,8 +103,10 @@
                   "content": "add Config folder",
                   "id": 1694567852218,
                   "level": "default",
-                  "done": false,
-                  "start": 1694567852218
+                  "done": true,
+                  "start": 1694567852218,
+                  "focus": false,
+                  "end": 1694661176468
                 }
               },
               {
@@ -898,6 +900,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694661079466"
+    "version": "1694661176670"
   }
 }

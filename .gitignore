@@ -25,6 +25,7 @@
 
 # Project Folders
 !/archives
+!/configs
 !/tests
 
 
