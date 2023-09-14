@@ -412,8 +412,10 @@
                   "content": "del",
                   "id": 1694658987050,
                   "level": "default",
-                  "done": false,
-                  "start": 1694658987050
+                  "done": true,
+                  "start": 1694658987050,
+                  "focus": false,
+                  "end": 1694701199505
                 }
               },
               {
@@ -1056,6 +1058,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694670499220"
+    "version": "1694701199718"
   }
 }
