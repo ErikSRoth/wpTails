@@ -190,8 +190,10 @@
                   "content": "add docs folder",
                   "id": 1694660061182,
                   "level": "default",
-                  "done": false,
-                  "start": 1694660061182
+                  "done": true,
+                  "start": 1694660061182,
+                  "focus": false,
+                  "end": 1694666606966
                 }
               }
             ],
@@ -996,6 +998,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694666312737"
+    "version": "1694666607156"
   }
 }

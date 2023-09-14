@@ -22,7 +22,8 @@
   },
   "directories": {
     "test": "tests",
-    "config": "configs"
+    "config": "configs",
+    "doc": "documentation"
   },
   "devDependencies": {
     "@babel/core": "^7.22.17",
