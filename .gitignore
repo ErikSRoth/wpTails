@@ -38,6 +38,7 @@
 !package.json
 !LICENSE.md
 !README.md
+!/**/*.php
 !wpTails-dict.txt
 !wpTails.todo
 
