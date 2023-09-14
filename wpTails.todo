@@ -129,8 +129,10 @@
                   "content": "add release folder",
                   "id": 1694567871577,
                   "level": "default",
-                  "done": false,
-                  "start": 1694567871577
+                  "done": true,
+                  "start": 1694567871577,
+                  "focus": false,
+                  "end": 1694668315961
                 }
               },
               {
@@ -998,6 +1000,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1694666797542"
+    "version": "1694668316184"
   }
 }
