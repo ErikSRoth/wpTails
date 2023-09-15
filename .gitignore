@@ -36,6 +36,7 @@
 # Project Files
 !cspell.json
 !package.json
+!gulpfile.babel.js
 !LICENSE.md
 !README.md
 !wpTails-dict.txt
