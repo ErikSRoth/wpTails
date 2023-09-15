@@ -30,6 +30,7 @@
     "@babel/preset-env": "^7.22.15",
     "@babel/register": "^7.22.15",
     "del": "^7.1.0",
+    "eslint": "^8.49.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0"
   },
