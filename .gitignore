@@ -19,6 +19,7 @@
 !.github
 
 # Dot Fiiles
+!.babelrc
 !.editorconfig
 !.gitignore
 !.gitkeep
