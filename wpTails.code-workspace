@@ -37,8 +37,7 @@
 			"bmewburn.vscode-intelephense-client",
 			"xabikos.javascriptsnippets",
 			"xdebug.php-debug",
-			"natqe.reload",
-			"saber2pr.todolist"
+			"natqe.reload"
 		]
 	}
 }

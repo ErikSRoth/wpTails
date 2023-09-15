@@ -19,27 +19,32 @@
 !.github
 
 # Dot Fiiles
+!.babelrc
 !.editorconfig
 !.gitignore
 !.gitkeep
+!.travis.yml
 
 # Project Folders
 !/archives
+!/bin
 !/configs
 !/documentation
 !/gulp
 !/release
 !/src
 !/tests
+!/theme
 
 
 # Project Files
+!composer.json
 !cspell.json
 !package.json
+!gulpfile.babel.js
 !LICENSE.md
 !README.md
 !wpTails-dict.txt
-!wpTails.todo
 
 # vsCode Workspace
 !wpTails.code-workspace
