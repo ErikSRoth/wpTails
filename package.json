@@ -35,9 +35,12 @@
     "clear-any-console": "^1.16.2",
     "del": "^7.1.0",
     "eslint": "^8.49.0",
+    "eslint-config-gulp": "^5.0.1",
     "fs-path": "^0.0.25",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-minify-css": "^1.2.4",
     "log-symbols": "^5.1.0",
     "ora": "^7.0.1",
     "tailwindcss": "^3.3.3"
