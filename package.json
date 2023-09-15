@@ -35,6 +35,10 @@
     "gulp-babel": "^8.0.0"
   },
   "scripts": {
+    "archive": "...",
+    "build": "...",
+    "clean": "...",
+    "clean:build": "...",
     "dev": "...",
     "install": "...",
     "postinstall": "...",
