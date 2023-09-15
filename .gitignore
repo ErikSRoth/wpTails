@@ -38,6 +38,7 @@
 
 
 # Project Files
+!composer.json
 !cspell.json
 !package.json
 !gulpfile.babel.js
