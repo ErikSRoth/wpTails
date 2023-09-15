@@ -29,11 +29,15 @@
     "@babel/core": "^7.22.17",
     "@babel/preset-env": "^7.22.15",
     "@babel/register": "^7.22.15",
+    "autoprefixer": "^10.4.15",
+    "browser-sync": "^2.29.3",
     "del": "^7.1.0",
     "eslint": "^8.49.0",
     "fs-path": "^0.0.25",
     "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0"
+    "gulp-babel": "^8.0.0",
+    "log-symbols": "^5.1.0",
+    "ora": "^7.0.1"
   },
   "scripts": {
     "archive": "...",
