@@ -23,6 +23,7 @@
 !.editorconfig
 !.gitignore
 !.gitkeep
+!.travis.yml
 
 # Project Folders
 !/archives
