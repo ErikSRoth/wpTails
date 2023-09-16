@@ -16,3 +16,9 @@
  * should do so in the `gulpfile.babel.js` file in the root directory.
  * 
  */
+
+module.exports = {
+    
+}
+
+/** EOF */
