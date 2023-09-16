@@ -51,10 +51,12 @@
     "gulp-purgecss": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-strip-css-comments": "^2.0.0",
     "log-symbols": "^5.1.0",
     "ora": "^7.0.1",
     "postcss": "^8.4.29",
     "prettier": "^3.0.3",
+    "sass": "^1.67.0",
     "tailwindcss": "^3.3.3"
   },
   "scripts": {
