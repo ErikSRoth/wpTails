@@ -68,14 +68,14 @@
     "tailwindcss": "^3.3.3"
   },
   "scripts": {
-    "archive": "...",
-    "build": "...",
-    "clean": "...",
-    "clean:build": "...",
-    "dev": "...",
-    "install": "...",
-    "postinstall": "...",
-    "setup": "...",
-    "test": "..."
+    "archive": "",
+    "build": "",
+    "clean": "",
+    "clean:build": "",
+    "dev": "",
+    "install": "",
+    "postinstall": "",
+    "setup": "npm install && composer install",
+    "test": ""
   }
 }
