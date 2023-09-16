@@ -39,6 +39,8 @@
 
 
 # Project Files
+!phpcs.xml.dist
+!phpunit.integration.xml.dist
 !composer.json
 !cspell.json
 !package.json
