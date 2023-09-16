@@ -39,8 +39,12 @@
 
 
 # Project Files
+!phpcs.xml.dist
+!phpunit.integration.xml.dist
 !composer.json
+!composer.lock
 !cspell.json
+!package-lock.json
 !package.json
 !gulpfile.babel.js
 !LICENSE.md

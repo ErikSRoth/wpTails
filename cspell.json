@@ -14,7 +14,7 @@
     "useGitignore": true,
 
     // Additionally ignore these paths and files.
-    "ignorePaths": [ "/package.json", "/node_modules/", "/wpTails-dict.txt", "/wpTails.code-workspace" ],
+    "ignorePaths": [ "/package.json", "/composer.json", "/node_modules/", "/wpTails-dict.txt", "/wpTails.code-workspace" ],
 
     // Add custom Dictionary File
     "dictionaries": [ "wpTails Dictionary", "companies", "softwareTerms" ],
