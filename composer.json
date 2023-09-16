@@ -29,12 +29,18 @@
     "config": {
         "platform": {
           "php": "8.0"
+        },
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
       },
-    "require": {
-        "php": ">=8.0"    
-    },
     "scripts": {
        
+    },
+    "require-dev": {
+        "php": ">=8.0",
+        "wp-coding-standards/wpcs": "^3.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "brain/monkey": "^2.6"
     }
 }
