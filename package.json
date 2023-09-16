@@ -45,6 +45,8 @@
     "gulp-babel": "^8.0.0",
     "gulp-eslint": "^6.0.0",
     "gulp-file-include": "^2.3.0",
+    "gulp-footer": "^2.1.0",
+    "gulp-header": "^2.0.9",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^8.0.0",
     "gulp-load-plugins": "^2.0.8",
