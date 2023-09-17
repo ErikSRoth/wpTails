@@ -6,3 +6,12 @@
 
 //Require Gulp or nothing works :)
 const gulp = require('gulp');
+
+/** Internal Dependencies */
+import * as gConfig from "./configs/gulp.config";
+
+/** External Dependencies */
+import * as clean from "./gulp/clean";
+
+/** Gulp Tasks */
+gulp.task('clean', clean.cleanChild);
