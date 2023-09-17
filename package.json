@@ -40,6 +40,8 @@
     "del": "^7.1.0",
     "eslint": "^8.49.0",
     "eslint-config-gulp": "^5.0.1",
+    "esm": "^3.2.25",
+    "esvalidate": "^0.1.3",
     "fs-path": "^0.0.25",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
