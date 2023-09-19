@@ -8,10 +8,11 @@
 const gulp = require('gulp');
 
 /** Internal Dependencies */
-import * as gConfig from "./configs/gulp.config";
+const gConfig = require( "./configs/gulp.config" );
+//const tConfig = require( "./configs/theme.config" );
 
 /** External Dependencies */
-import * as clean from "./gulp/clean";
+//import * as clean from "./gulp/clean";
 
 /** Gulp Tasks */
-gulp.task('clean', clean.cleanChild);
+//gulp.task('clean', clean.cleanChild);
