@@ -33,7 +33,13 @@ const rootPath = process.cwd();
 /** The gulp path is where all the individual gulp process files reside */
 const gulpPath = path.resolve( __dirname, `${rootPath}/gulp` );
 
+/**
+ * Theme types to use in project
+ */
+const themeTypes = {
 
+
+}
 
 /** Export out Functions and Constants */
 module.exports = {
