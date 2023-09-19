@@ -82,7 +82,13 @@ const buildLite = true;
 /** Export out Functions and Constants */
 module.exports = {
     themeName,
-    themeSlug
+    themeSlug,
+    themeMain,
+    themeChild,
+    themeLite,
+    buildMain,
+    buildChild,
+    buildLite
 }
 
 /** EOF */
