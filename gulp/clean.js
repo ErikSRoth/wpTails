@@ -21,8 +21,8 @@
 'use strict';
 
 /** Internal Dependencies */
-//import { rootPath } from "../configs/gulp.config";
-//const config = require( "../configs/gulp.config" );
+const gConfig = require( "../configs/gulp.config" );
+const tData = require( "../configs/theme.config" );
 
 /** External Dependencies */
 //const del = require( 'del' );
