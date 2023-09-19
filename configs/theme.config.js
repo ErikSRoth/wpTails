@@ -50,6 +50,19 @@
  */
 const themeSlug = 'wptails';
 
+/**
+ * Theme versions: There are three versions that you can set for your theme. The
+ * first of these is of course the main theme which will use the 'themeSlug' as
+ * its folder name. The second is the child theme which will use the 'themeSlug-child'
+ * as its folder name. The third is reserved for a 'lite'version of the them that
+ * you can place in the Wordpress Theme Repository. This version will have some limited
+ * functionality and will be named 'themeSlug-lite'.
+ */
+const themeMain = `${themeSlug}`;
+const themeChild = `${themeSlug}-child`;
+const themeLite = `${themeSlug}-lite`;
+
+
 
 
 
