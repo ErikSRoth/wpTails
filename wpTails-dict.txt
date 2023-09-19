@@ -5,5 +5,6 @@
 # This file is a cSpell Custom Dictionary File for this theme repository.
 # WARNING: This file will alphabetize itself as new words are added.
 gulpfile
+mytheme
 wptails
 wpTails
