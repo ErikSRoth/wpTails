@@ -62,9 +62,22 @@ const themeMain = `${themeSlug}`;
 const themeChild = `${themeSlug}-child`;
 const themeLite = `${themeSlug}-lite`;
 
+/**
+ * Which version you build can be set with the following variables. The default
+ * boolean value is set to true. If you do want to build a child theme or a
+ * lite version foo the theme, set the corresponding theme variables to false.
+ * It is quite common for theme developers to only build a main and child them 
+ * if they plan on selling the them. However, it is helpful to get your theme
+ * noticed by building a lite version and placing it in the Wordpress Theme
+ * Repository.
+ */
+const buildMain = true;
+const buildChild = true;
+const buildLite = true;
 
-
-
+/** 
+ * 
+ */
 
 /** Export out Functions and Constants */
 module.exports = {
