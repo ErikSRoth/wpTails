@@ -21,20 +21,35 @@
 'use strict';
 
 /** Internal Dependencies */
-const gConfig = require( "../configs/gulp.config" );
-const tData = require( "../configs/theme.config" );
+import * as gConfig from "../configs/gulp.config.js";
+import * as tData from "../configs/theme.config.js";
+//const gConfig = require( "../configs/gulp.config" );
+//const tData = require( "../configs/theme.config" );
 
 /** External Dependencies */
+import { deleteAsync } from "del";
 //const del = require( 'del' );
 
-/*
-function cleanChild(done) {
-    return del( [ `${ config.rootPath }/theme/wpTails-child/*` ] );
-}*/
+const cChild = await deleteAsync( [ `${ gConfig.rootPath }/theme/${ tData.themeSlug }-child/*`, `!${ gConfig.rootPath }/theme/${ tData.themeSlug }`  ] )
+
+
+function cleanDevBuilds(done) {
+
+    
+   /**if ( tData.buildChild === true ) {
+    exports.cleanChild = async function cleanChild(done) {
+        await deleteAsync( [ `${ gConfig.rootPath }/theme/${ tData.themeSlug }-child/*`, `!${ gConfig.rootPath }/theme/${ tData.themeSlug }`  ] )
+    }
+  }*/
+}
+
+
+
 
 /** Export out Functions */
 module.exports = {
-    
+    cleanDevBuilds,
+    cChild
 }
 
 /** EOF */

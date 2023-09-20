@@ -21,7 +21,8 @@
 'use strict';
 
 /** Internal Dependencies */
-const tData = require( './theme.config.js' );
+//import * as gConfig from "../configs/gulp.config.js";
+import * as tData from "../configs/theme.config.js";
 
 /** External Dependencies */
 const gPlugins = require( 'gulp-load-plugins' )();

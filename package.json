@@ -4,6 +4,7 @@
   "license": "MIT",
   "description": "wpTails is a WordPress theme development enviroment based on the TailwindCSS framework, with a modern gulp powered workflow.",
   "main": "gulpfile.babel.js",
+  "type": "module",
   "keywords": [
     "wordpress",
     "tailwindcss"
@@ -45,12 +46,12 @@
     "fs-path": "^0.0.25",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
     "gulp-eslint": "^6.0.0",
     "gulp-file-include": "^2.3.0",
     "gulp-footer": "^2.1.0",
     "gulp-header": "^2.0.9",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^8.0.0",
     "gulp-load-plugins": "^2.0.8",
     "gulp-minify-css": "^1.2.4",
     "gulp-phpcs": "^3.1.0",
