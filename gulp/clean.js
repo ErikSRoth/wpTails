@@ -21,16 +21,23 @@
 'use strict';
 
 /** Internal Dependencies */
-import * as gConfig from "../configs/gulp.config.js";
-import * as tData from "../configs/theme.config.js";
+import * as gConfig from "../configs/gulp.config";
+import * as tData from "../configs/theme.config";
 //const gConfig = require( "../configs/gulp.config" );
 //const tData = require( "../configs/theme.config" );
 
 /** External Dependencies */
-import { deleteAsync } from "del";
+import del from "del";
 //const del = require( 'del' );
 
-const cChild = await deleteAsync( [ `${ gConfig.rootPath }/theme/${ tData.themeSlug }-child/*`, `!${ gConfig.rootPath }/theme/${ tData.themeSlug }`  ] )
+export function cleanChild() { 
+  const delPath = [ 
+  `/theme/${tData.themeSlug}-child/**`, 
+  `!/theme/${tData.themeSlug}-child`,
+  `!/theme/${tData.themeSlug}-child/.gitkeep`  
+  ];
+  return del( delPath );
+}
 
 
 function cleanDevBuilds(done) {
@@ -46,10 +53,10 @@ function cleanDevBuilds(done) {
 
 
 
-/** Export out Functions */
+/** Export out Functions 
 module.exports = {
     cleanDevBuilds,
-    cChild
-}
+    cleanChild
+}*/
 
 /** EOF */

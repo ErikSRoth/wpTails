@@ -5,15 +5,18 @@
 'use strict';
 
 //Require Gulp or nothing works :)
-const gulp = require('gulp');
+//const gulp = require('gulp');
+import {parallel, series} from 'gulp';
 
 /** Internal Dependencies */
-const gConfig = require( "./configs/gulp.config.js" );
-const tConfig = require( "./configs/theme.config.js" );
+const gConfig = require( "./configs/gulp.config" );
+const tConfig = require( "./configs/theme.config" );
 
 /** External Dependencies */
 //const clean = require( './gulp/clean' );
-import * as clean from './gulp/clean.js';
+import {cleanChild} from './gulp/clean';
 
 /** Gulp Tasks */
-//gulp.task('clean', clean.cleanChild);
+//gulp.task('cleanup', clean.cleanChild);
+
+export const cleanChildBuild = series( cleanChild );

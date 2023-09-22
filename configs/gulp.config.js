@@ -22,17 +22,19 @@
 
 /** Internal Dependencies */
 //import * as gConfig from "../configs/gulp.config.js";
-import * as tData from "../configs/theme.config.js";
+import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
-const gPlugins = require( 'gulp-load-plugins' )();
+export const gPlugins = require( 'gulp-load-plugins' )();
 import path from 'path';
 
 /** The root path is where all the npm run commands get executed from */
-const rootPath = process.cwd();
+export const rootPath = path.resolve( __dirname, '../' );
 
 /** The gulp path is where all the individual gulp process files reside */
-const gulpPath = path.resolve( __dirname, `${rootPath}/gulp` );
+export const gulpPath = path.resolve( __dirname, `${rootPath}/gulp` );
+
+export const srcPath = `${rootPath}/src`;
 
 /**
  * Theme types to use in project
@@ -42,13 +44,14 @@ const themeTypes = {
 
 }
 
-/** Export out Functions and Constants */
+/** Export out Functions and Constants
 module.exports = {
     gPlugins,
     rootPath,
     gulpPath,
-    tData
-}
+    tData,
+    srcPath
+} */
 
 
 
