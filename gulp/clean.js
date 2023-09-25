@@ -32,9 +32,9 @@ import del from "del";
 
 export function cleanChild() { 
   const delPath = [ 
-  `/theme/${tData.themeSlug}-child/**`, 
-  `!/theme/${tData.themeSlug}-child`,
-  `!/theme/${tData.themeSlug}-child/.gitkeep`  
+  `${gConfig.rootPath}/theme/${tData.themeSlug}-child/**/*`, 
+  `!${gConfig.rootPath}/theme/${tData.themeSlug}-child`,
+  `!${gConfig.rootPath}/theme/${tData.themeSlug}-child/.gitkeep`  
   ];
   return del( delPath );
 }

@@ -29,8 +29,7 @@ export const gPlugins = require( 'gulp-load-plugins' )();
 import path from 'path';
 
 /** The root path is where all the npm run commands get executed from */
-export const rootPath = path.resolve( __dirname, '../' );
-
+export const rootPath = process.cwd();
 /** The gulp path is where all the individual gulp process files reside */
 export const gulpPath = path.resolve( __dirname, `${rootPath}/gulp` );
 
