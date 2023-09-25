@@ -39,6 +39,14 @@ export function cleanChild() {
   return del( delPath );
 }
 
+export function cleanMain() { 
+  const delPath = [ 
+  `${gConfig.rootPath}/theme/${tData.themeSlug}/**/*`, 
+  `!${gConfig.rootPath}/theme/${tData.themeSlug}`,
+  `!${gConfig.rootPath}/theme/${tData.themeSlug}/.gitkeep`  
+  ];
+  return del( delPath );
+}
 
 function cleanDevBuilds(done) {
 
@@ -50,13 +58,5 @@ function cleanDevBuilds(done) {
   }*/
 }
 
-
-
-
-/** Export out Functions 
-module.exports = {
-    cleanDevBuilds,
-    cleanChild
-}*/
 
 /** EOF */
