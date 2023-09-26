@@ -48,15 +48,35 @@ export function cleanMain() {
   return del( delPath );
 }
 
-function cleanDevBuilds(done) {
-
-    
-   /**if ( tData.buildChild === true ) {
-    exports.cleanChild = async function cleanChild(done) {
-        await deleteAsync( [ `${ gConfig.rootPath }/theme/${ tData.themeSlug }-child/*`, `!${ gConfig.rootPath }/theme/${ tData.themeSlug }`  ] )
-    }
-  }*/
+export function cleanLite() { 
+  const delPath = [ 
+  `${gConfig.rootPath}/theme/${tData.themeSlug}-lite/**/*`, 
+  `!${gConfig.rootPath}/theme/${tData.themeSlug}-lite`,
+  `!${gConfig.rootPath}/theme/${tData.themeSlug}-lite/.gitkeep`  
+  ];
+  return del( delPath );
 }
 
+export function cleanDevBuilds() {
+  //
+}
+
+export function cleanProdBuilds() {
+  //
+}
+
+export function cleanAllBuilds() {
+  //
+}
+
+export function cleanCss() {
+  //
+}
+
+export function cleanJs() {
+  //
+}
+
+/**  */
 
 /** EOF */
