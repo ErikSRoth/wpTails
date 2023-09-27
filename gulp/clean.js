@@ -28,8 +28,10 @@ import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
 import del from "del";
-//const del = require( 'del' );
 
+
+/** */
+/** */ 
 export function cleanChild() { 
   const delPath = [ 
   `${gConfig.rootPath}/theme/${tData.themeSlug}-child/**/*`, 
@@ -39,6 +41,7 @@ export function cleanChild() {
   return del( delPath );
 }
 
+/** */
 export function cleanMain() { 
   const delPath = [ 
   `${gConfig.rootPath}/theme/${tData.themeSlug}/**/*`, 
@@ -48,6 +51,7 @@ export function cleanMain() {
   return del( delPath );
 }
 
+/** */
 export function cleanLite() { 
   const delPath = [ 
   `${gConfig.rootPath}/theme/${tData.themeSlug}-lite/**/*`, 
@@ -57,6 +61,7 @@ export function cleanLite() {
   return del( delPath );
 }
 
+/** */
 export function cleanDevBuilds() {
   if ( tData.buildChild === true) {
     cleanChild();
@@ -69,18 +74,22 @@ export function cleanDevBuilds() {
   }
 }
 
+/** */
 export function cleanProdBuilds() {
   //
 }
 
+/** */
 export function cleanAllBuilds() {
   //
 }
 
+/** */
 export function cleanCss() {
   //
 }
 
+/** */
 export function cleanJs() {
   //
 }
