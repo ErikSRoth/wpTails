@@ -58,7 +58,15 @@ export function cleanLite() {
 }
 
 export function cleanDevBuilds() {
-  //
+  if ( tData.buildChild === true) {
+    cleanChild();
+  } else if ( tData.buildMain === true) {
+    cleanMain();
+  } else if ( tData.buildLite === true) {
+    cleanLite();
+  } else {
+    console.log( "No builds to clean." );
+  }
 }
 
 export function cleanProdBuilds() {
