@@ -23,8 +23,6 @@
 /** Internal Dependencies */
 import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
-//const gConfig = require( "../configs/gulp.config" );
-//const tData = require( "../configs/theme.config" );
 
 /** External Dependencies */
 import del from "del";
