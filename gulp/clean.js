@@ -65,7 +65,7 @@ export function cleanDevBuilds() {
   } else if ( tData.buildLite === true) {
     cleanLite();
   } else {
-    console.log( "No builds to clean." );
+    console.log( "No development builds need to be cleaned." );
   }
 }
 
