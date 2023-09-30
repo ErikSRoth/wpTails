@@ -45,7 +45,6 @@
     "fs-path": "^0.0.25",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "gulp-clean": "^0.4.0",
     "gulp-eslint": "^6.0.0",
     "gulp-file-include": "^2.3.0",
     "gulp-footer": "^2.1.0",
