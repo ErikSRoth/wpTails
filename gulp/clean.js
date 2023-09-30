@@ -26,18 +26,60 @@ import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
 import del from "del";
-
+import * as fs from "fs";
+import * as path from "path";
 
 /** */
 /** */ 
 export function cleanChild() { 
+
+
+
+  //var filesX = 0;
+  if ( tData.buildChild === true) {
+    
+    
+    /**fs.readdir(`${gConfig.rootPath}/theme/${tData.themeSlug}-child`, (err, files) => {
+      files.forEach(file => {
+        filesX = filesX +1
+     // files.filter( f => f !== ".gitkeep" )
+      
+      })
+    })
+    console.log( filesX );*/
+   
+    //fs.readdir( `!${gConfig.rootPath}/theme/${tData.themeSlug}-child`, (error, files) => { 
+      //let totalFiles = files.length; // return the number of files
+      //console.log(totalFiles); // print the total number of files
+   //})
+
+  // return console.log( "Done" );
+
+//   
+//if ( filesX > 0) {
+
+
+try {
+  const arrayOfFiles = fs.readdirSync(`${gConfig.rootPath}/theme/${tData.themeSlug}-child`)
+  console.log(arrayOfFiles)
+} catch(e) {
+  console.log(e)
+}
+
+
   const delPath = [ 
   `${gConfig.rootPath}/theme/${tData.themeSlug}-child/**/*`, 
   `!${gConfig.rootPath}/theme/${tData.themeSlug}-child`,
   `!${gConfig.rootPath}/theme/${tData.themeSlug}-child/.gitkeep`  
   ];
-  return del( delPath );
+  return  del( delPath );
+} else {
+  return console.log( "No development theme child builds need to be cleaned." );
 }
+}
+//  }
+//}s
+
 
 /** */
 export function cleanMain() { 
