@@ -19,4 +19,4 @@ import * as clean from './gulp/clean';
 /** Gulp Tasks */
 //gulp.task('cleanup', clean.cleanChild);
 
-export const cleanChildBuild = series( clean.cleanChild );
+export const cleanDev = series( clean.cleanChild);
