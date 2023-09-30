@@ -64,6 +64,13 @@ export const buildMain = true;
 export const buildChild = true;
 export const buildGpl = true;
 
+/** 
+ * Use Banners: The banners are used to provide information about the file, author,
+ * license, and version. They are meant to be modified to fit your theme. You can
+ * remove them from the builds by setting this variable to false.
+ */
+export const useBanners = true;
+
 
 /** Do No Change Anything Below This Line Unless You Know What You Are Doing! */
 
