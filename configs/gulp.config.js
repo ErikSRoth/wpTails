@@ -35,6 +35,8 @@ export const gulpPath = path.resolve( __dirname, `${rootPath}/gulp` );
 
 export const srcPath = `${rootPath}/src`;
 
+export const devPath = `${rootPath}/theme`;
+
 export const distPath = `${rootPath}/dist`;
 
 /**
