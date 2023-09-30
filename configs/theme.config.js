@@ -7,7 +7,7 @@
  * @file gulp.config.js
  * @description Gulp configuration settings for wpTails Gulp workflow.
  * @package wpTails
- * @module wpTails/gulp/theme.config
+ * @file wpTails/gulp/theme.config
  * @version 1.0.0
  * @since 1.0.0
  * 
@@ -64,8 +64,11 @@ export const buildMain = true;
 export const buildChild = true;
 export const buildGpl = true;
 
+
+/** Do No Change Anything Below This Line Unless You Know What You Are Doing! */
+
 /** 
- * Settings that should never need to be changed. These are the default settings
+ * These are settings that should never need to be changed. These are the default settings
  * for certain parameters that are used throughout to build your theme. You should 
  * not need to change these settings unless you are doing something very specific
  * with your theme. Keep in mind that if you do change these settings, you will
