@@ -7,7 +7,7 @@
  * @file gulp.config.js
  * @description Gulp configuration settings for wpTails Gulp workflow.
  * @package wpTails
- * @file wpTails/gulp/theme.config
+ * 
  * @version 1.0.0
  * @since 1.0.0
  * 
