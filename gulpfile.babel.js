@@ -14,6 +14,7 @@ const tConfig = require( "./configs/theme.config" );
 
 /** External Dependencies */
 import * as clean from './gulp/clean';
+import * as php from './gulp/php';
 
 /** Gulp Tasks */
 
