@@ -13,10 +13,9 @@ const gConfig = require( "./configs/gulp.config" );
 const tConfig = require( "./configs/theme.config" );
 
 /** External Dependencies */
-//const clean = require( './gulp/clean' );
 import * as clean from './gulp/clean';
 
 /** Gulp Tasks */
 //gulp.task('cleanup', clean.cleanChild);
 
-export const cleanDev = series( clean.cleanChild);
+export const cleanDev = series( clean.ccdev );
