@@ -11,7 +11,7 @@
  * @version 1.0.0
  * @since 1.0.0
  * 
- * These mic banners are used to provide information about the file, author,
+ * These banners are used to provide information about the file, author,
  * license, and version. They are meant to be modified to fit your theme. 
  * The banners are added to the files at build time for both the development
  * and production versions of the theme.
@@ -28,3 +28,30 @@
 /** Internal Dependencies */
 
 /** External Dependencies */
+
+/** Banner for all 'PHP' Files */
+export const phpBnr = {
+    //
+}
+
+/** Banner for JS Files */
+export const jsBnr = {
+    //
+}
+
+/** Top of Banner for CSS Files */
+export const cssTopBnr = {
+    //
+}
+
+/** Bottom of Banner for WP Style CSS File */
+export const cssBotWpBnr = {
+    //
+}
+
+/** Bottom of Banner for all other CSS File */
+export const cssBotBnr = {
+    //
+}
+
+/** EOF */
