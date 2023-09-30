@@ -51,18 +51,6 @@
 export const themeSlug = 'wptails';
 
 /**
- * Theme versions: There are three versions that you can set for your theme. The
- * first of these is of course the main theme which will use the 'themeSlug' as
- * its folder name. The second is the child theme which will use the 'themeSlug-child'
- * as its folder name. The third is reserved for a 'gpl'version of the them that
- * you can place in the Wordpress Theme Repository. This version will have some limited
- * functionality and will be named 'themeSlug-gpl'. These Exports should never be changed.
- */
-export const themeMain = `${themeSlug}`;
-export const themeChild = `${themeSlug}-child`;
-export const themeGpl = `${themeSlug}-gpl`;
-
-/**
  * Which version you build can be set with the following variables. The default
  * boolean value is set to true. If you do want to build a child theme or a
  * gpl version foo the theme, set the corresponding theme variables to false.
@@ -77,10 +65,24 @@ export const buildChild = true;
 export const buildGpl = true;
 
 /** 
- * 
+ * Settings that should never need to be changed. These are the default settings
+ * for certain parameters that are used throughout to build your theme. You should 
+ * not need to change these settings unless you are doing something very specific
+ * with your theme. Keep in mind that if you do change these settings, you will
+ * possibly break the gulp workflow and your theme will not build correctly.
  */
 
-
+/**
+ * Theme versions: There are three versions that you can set for your theme. The
+ * first of these is of course the main theme which will use the 'themeSlug' as
+ * its folder name. The second is the child theme which will use the 'themeSlug-child'
+ * as its folder name. The third is reserved for a 'gpl'version of the them that
+ * you can place in the Wordpress Theme Repository. This version will have some limited
+ * functionality and will be named 'themeSlug-gpl'.
+ */
+export const themeMain = `${themeSlug}`;
+export const themeChild = `${themeSlug}-child`;
+export const themeGpl = `${themeSlug}-gpl`;
 
 
 /** EOF */
