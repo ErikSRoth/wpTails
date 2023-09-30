@@ -77,7 +77,7 @@
     "dev": "",
     "install": "",
     "postinstall": "",
-    "setup": "npm install && composer install",
-    "test": ""
+    "setup": "npm install",
+    "test": "gulp cleanDev"
   }
 }
