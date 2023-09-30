@@ -15,6 +15,7 @@
  * configuration settings for the Gulp clean functions. If you need to modify the Gulp
  * Clean tasks and their usage, you should do so in the `gulpfile.babel.js` file in the root directory.
  * 
+ * TODO: add bug reporting and issue information
  */
 
 /* eslint-env es6 */
@@ -26,114 +27,101 @@ import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
 import del from "del";
-import * as fs from "fs";
-import * as path from "path";
 
-/** */
-/** */ 
-export function cleanChild() { 
+/** Various functions of file type cleanup scripts to be used within the Gulp workflow.
+ *  All strings ($) are pulled from the config files, so nothing here should need to be changed.
+ */
 
-
-
-  //var filesX = 0;
+/** Clean Development Child Theme Build Folder */ 
+export function ccdev() { 
   if ( tData.buildChild === true) {
-    
-    
-    /**fs.readdir(`${gConfig.rootPath}/theme/${tData.themeSlug}-child`, (err, files) => {
-      files.forEach(file => {
-        filesX = filesX +1
-     // files.filter( f => f !== ".gitkeep" )
-      
-      })
-    })
-    console.log( filesX );*/
-   
-    //fs.readdir( `!${gConfig.rootPath}/theme/${tData.themeSlug}-child`, (error, files) => { 
-      //let totalFiles = files.length; // return the number of files
-      //console.log(totalFiles); // print the total number of files
-   //})
+    const delPath = [ 
+    `${gConfig.devPath}/${tData.themeChild}/**/*`, 
+    `!${gConfig.devPath}/${tData.themeChild}`,
+    `!${gConfig.devPath}/${tData.themeChild}/.gitkeep` 
+    ];
+    return  del( delPath );
+  } 
+};
 
-  // return console.log( "Done" );
-
-//   
-//if ( filesX > 0) {
-
-
-try {
-  const arrayOfFiles = fs.readdirSync(`${gConfig.rootPath}/theme/${tData.themeSlug}-child`)
-  console.log(arrayOfFiles)
-} catch(e) {
-  console.log(e)
-}
-
-
-  const delPath = [ 
-  `${gConfig.rootPath}/theme/${tData.themeSlug}-child/**/*`, 
-  `!${gConfig.rootPath}/theme/${tData.themeSlug}-child`,
-  `!${gConfig.rootPath}/theme/${tData.themeSlug}-child/.gitkeep`  
-  ];
-  return  del( delPath );
-} else {
-  return console.log( "No development theme child builds need to be cleaned." );
-}
-}
-//  }
-//}s
-
-
-/** */
-export function cleanMain() { 
-  const delPath = [ 
-  `${gConfig.rootPath}/theme/${tData.themeSlug}/**/*`, 
-  `!${gConfig.rootPath}/theme/${tData.themeSlug}`,
-  `!${gConfig.rootPath}/theme/${tData.themeSlug}/.gitkeep`  
-  ];
-  return del( delPath );
-}
-
-/** */
-export function cleanLite() { 
-  const delPath = [ 
-  `${gConfig.rootPath}/theme/${tData.themeSlug}-lite/**/*`, 
-  `!${gConfig.rootPath}/theme/${tData.themeSlug}-lite`,
-  `!${gConfig.rootPath}/theme/${tData.themeSlug}-lite/.gitkeep`  
-  ];
-  return del( delPath );
-}
-
-/** */
-export function cleanDevBuilds() {
+/** Clean Distribution Child Theme Build Folder*/ 
+export function ccdist() { 
   if ( tData.buildChild === true) {
-    cleanChild();
-  } else if ( tData.buildMain === true) {
-    cleanMain();
-  } else if ( tData.buildLite === true) {
-    cleanLite();
-  } else {
-    console.log( "No development builds need to be cleaned." );
-  }
+    const delPath = [ 
+    `${gConfig.distPath}/${tData.themeChild}/**/*`, 
+    `!${gConfig.distPath}${tData.themeChild}`,
+    `!${gConfig.distPath}/${tData.themeChild}/.gitkeep`
+    ];
+    return  del( delPath );
+  } 
+};
+
+/** Clean Development Main Theme Build Folder */ 
+export function cmdev() { 
+  if ( tData.buildMain === true) {
+    const delPath = [ 
+    `${gConfig.devPath}/${tData.themeMain}/**/*`, 
+    `!${gConfig.devPath}/${tData.themeMain}`,
+    `!${gConfig.devPath}/${tData.themeMain}/.gitkeep`
+    ];
+    return  del( delPath );
+  } 
+};
+
+/** Clean Distribution main Theme Build Folder*/ 
+export function cmdist() { 
+  if ( tData.buildMain === true) {
+    const delPath = [ 
+    `${gConfig.distPath}/${tData.themeMain}/**/*`, 
+    `!${gConfig.distPath}${tData.themeMain}`,
+    `!${gConfig.distPath}/${tData.themeMain}/.gitkeep`
+    ];
+    return  del( delPath );
+  } 
+};
+
+/** Clean Development GPL for WP Repository Theme Build Folder */ 
+export function cgdev() { 
+  if ( tData.buildGpl === true) {
+    const delPath = [ 
+    `${gConfig.devPath}/${tData.themeGpl}/**/*`, 
+    `!${gConfig.devPath}/${tData.themeGpl}`,
+    `!${gConfig.devPath}/${tData.themeGpl}/.gitkeep`
+    ];
+    return  del( delPath );
+  } 
+};
+
+/** Clean Distribution GPL for WP Repository Theme Build Folder*/ 
+export function cgdist() { 
+  if ( tData.buildGpl === true) {
+    const delPath = [ 
+    `${gConfig.distPath}/${tData.themeGpl}/**/*`, 
+    `!${gConfig.distPath}${tData.themeGpl}`,
+    `!${gConfig.distPath}/${tData.themeGpl}/.gitkeep`
+    ];
+    return  del( delPath );
+  } 
+};
+
+/** Clean Dev SCSS/CSS files on BrowserSync reload to apply changes */
+export function clnCss() {
+  const delPath = [ 
+    `${gConfig.rootPath}/${tData.themeMain}/assets/css/**/*`, 
+    `!${gConfig.rootPath}/${tData.themeMain}/assets/css`,
+    ];
+    return  del( delPath );
+};
+
+/** Clean Dev JS files on BrowserSync reload to apply changes */
+export function clnJs() {
+  const delPath = [ 
+    `${gConfig.rootPath}/${tData.themeMain}/assets/js/**/*`, 
+    `!${gConfig.rootPath}/${tData.themeMain}/assets/js`,
+    ];
+    return  del( delPath );
 }
 
-/** */
-export function cleanProdBuilds() {
-  //
-}
-
-/** */
-export function cleanAllBuilds() {
-  //
-}
-
-/** */
-export function cleanCss() {
-  //
-}
-
-/** */
-export function cleanJs() {
-  //
-}
-
-/**  */
+/** End of various exported Gulp clean functions */
 
 /** EOF */
