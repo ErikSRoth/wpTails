@@ -85,10 +85,10 @@ module.exports = {
     themeSlug,
     themeMain,
     themeChild,
-    themeLite,
+    themeGpl,
     buildMain,
     buildChild,
-    buildLite
+    buildGpl
 }
 
 /** EOF */
