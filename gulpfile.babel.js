@@ -16,6 +16,9 @@ const tConfig = require( "./configs/theme.config" );
 import * as clean from './gulp/clean';
 
 /** Gulp Tasks */
-//gulp.task('cleanup', clean.cleanChild);
 
-export const cleanDev = series( clean.ccdev );
+/** Wipe Development Build Folders */
+export const cleanDev = parallel( clean.ccdev, clean.cmdev, clean.cgdev );
+
+/** Wipe Distribution Build Folders */
+export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
