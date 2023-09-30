@@ -60,7 +60,7 @@ const themeSlug = 'wptails';
  */
 const themeMain = `${themeSlug}`;
 const themeChild = `${themeSlug}-child`;
-const themeLite = `${themeSlug}-lite`;
+const themeGpl = `${themeSlug}-gpl`;
 
 /**
  * Which version you build can be set with the following variables. The default
@@ -73,7 +73,7 @@ const themeLite = `${themeSlug}-lite`;
  */
 const buildMain = true;
 const buildChild = true;
-const buildLite = true;
+const buildGpl = true;
 
 /** 
  * 
