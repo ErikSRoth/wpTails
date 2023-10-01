@@ -1,5 +1,7 @@
 <?php
-
-@banner
-
+ #topBanner
+?>
+LOL
+<?php
+ #botBanner
 ?>
