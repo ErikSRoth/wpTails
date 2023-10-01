@@ -23,3 +23,9 @@ export const cleanDev = parallel( clean.ccdev, clean.cmdev, clean.cgdev );
 
 /** Wipe Distribution Build Folders */
 export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
+
+
+export const gtest = series(  );
+
+
+/** EOF */
