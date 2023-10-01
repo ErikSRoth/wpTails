@@ -78,6 +78,6 @@
     "install": "",
     "postinstall": "",
     "setup": "npm install",
-    "test": " "
+    "test": "gulp gtest "
   }
 }
