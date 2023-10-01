@@ -25,7 +25,7 @@ export const cleanDev = parallel( clean.ccdev, clean.cmdev, clean.cgdev );
 export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
 
 
-export const gtest = series(  );
+export const gtest = series( php.phpDev );
 
 
 /** EOF */

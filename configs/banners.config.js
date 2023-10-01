@@ -26,13 +26,34 @@
 'use strict';
 
 /** Internal Dependencies */
+import * as gConfig from "../configs/gulp.config.js";
+import * as tData from "../configs/theme.config";
+import * as pkg from "../package.json";
 
 /** External Dependencies */
 
-/** Banner for all 'PHP' Files */
-export const phpBnr = {
-    //
-}
+/** Top Banner for all 'PHP' Files (#topBanner) */
+export const phpTopBnr = 
+    '/**\n' +
+    ` * ${tData.themeName} - A Multiuse Wordpress Theme.\n` +
+    ` * Built for WordPress Version: ${tData.wpv}, Running on PHP Version: ${tData .phpv}\n` +
+    ` * Copyright ©${tData.copyStart}-${tData.copyEnd}   ${tData.authorName}  <${tData.authorEmail}>\n` +
+    ` * Licensed under the ${tData.license} License <${tData.licenseUrl}>\n` +
+    ` * SPDX-License-Identifier: ${tData.spdxLicense}\n` +
+    ` * \n` +
+    ` * @package ${tData.themeName}\n` +
+    ` * @version ${pkg.version}\n` +
+    ` * \n` +
+    ` */\n\n`;
+
+/** Bottom Banner for specific 'PHP' Files (#botBanner) */
+export const phpBotBnr = 
+    '/**\n' +
+    ` * ${tData.themeName} was built with wpTails WordPress Theme Development System\n` +
+    ` * wpTails was built by Erik S. Roth  https://github.com/ErikSRoth\n` +
+    ` * and is licensed under the MIT License <https://opensource.org/licenses/MIT>\n` +
+    ` */\n`;
+
 
 /** Banner for JS Files */
 export const jsBnr = {

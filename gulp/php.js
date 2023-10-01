@@ -21,26 +21,26 @@
 /* eslint-env es6 */
 'use strict';
 
+/** Require Gulp or nothing works! */
+import * as gulp from 'gulp';
+
 /** Internal Dependencies */
 import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
+import { phpTopBnr, phpBotBnr } from "../configs/banners.config";
 
-/** PHP Development */
-export function phpdev() {
+/** PHP Main Theme  */
+export function phpDev() {
     const srcPath = [ `${gConfig.srcPath}/**/*.php` ];
-    const destPath = `${gConfig.devPath}`;
+    const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
     return gulp.src( srcPath )
+        .pipe( gConfig.gPlugins.replace( '#topBanner', `${phpTopBnr}` ) )
+        .pipe( gConfig.gPlugins.replace( '#botBanner', `${phpBotBnr}` ) )
         .pipe( gulp.dest( destPath ) );
 };
 
-/** PHP Distribution */
-export function phpdist() {
-    const srcPath = [ `${gConfig.srcPath}/**/*.php` ];
-    const destPath = `${gConfig.distPath}`;
-    return gulp.src( srcPath )
-        .pipe( gulp.dest( destPath ) );
-};
+
 
 /** EOF */
