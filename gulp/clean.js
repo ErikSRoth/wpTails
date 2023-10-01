@@ -7,7 +7,7 @@
  * @file clean.js
  * @description Gulp configuration settings for wpTails Gulp workflow.
  * @package wpTails
- * @module wpTails/gulp/clean.js
+ * 
  * @version 1.0.0
  * @since 1.0.0
  * 

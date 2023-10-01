@@ -11,10 +11,6 @@
  * @version 1.0.0
  * @since 1.0.0
  * 
- * You should NOT need to modify anything in this file. This file contains the
- * configuration settings for Gulp. If you need to modify the Gulp tasks, you
- * should do so in the `gulpfile.babel.js` file in the root directory.
- * 
  */
 
 /* eslint-env es6 */
@@ -51,6 +47,20 @@
 export const themeSlug = 'wptails';
 
 /**
+ * Author
+ */
+export const authorName = 'Erik S. Roth';
+export const authorEmail = 'erikroth@isu.edu';
+export const authorUrl = 'https://erikroth.me';
+
+/**
+ * License
+ */
+export const license = 'MIT';
+export const licenseUrl = 'https://opensource.org/licenses/MIT';
+export const spdxLicense = 'MIT';
+
+/**
  * Which version you build can be set with the following variables. The default
  * boolean value is set to true. If you do want to build a child theme or a
  * gpl version foo the theme, set the corresponding theme variables to false.
@@ -70,6 +80,11 @@ export const buildGpl = true;
  * remove them from the builds by setting this variable to false.
  */
 export const useBanners = true;
+
+/**
+ * Banner infformation
+*/
+export const copyStart = '2022';
 
 
 /** Do No Change Anything Below This Line Unless You Know What You Are Doing! */
@@ -94,5 +109,16 @@ export const themeMain = `${themeSlug}`;
 export const themeChild = `${themeSlug}-child`;
 export const themeGpl = `${themeSlug}-gpl`;
 
+/**
+ * Versioning
+ */
+export const wpv = '6.1';
+export const phpv = '8.1';
+
+
+/**
+ * Copyright end year
+ */
+export const copyEnd = new Date().getFullYear();
 
 /** EOF */

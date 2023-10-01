@@ -14,6 +14,7 @@ const tConfig = require( "./configs/theme.config" );
 
 /** External Dependencies */
 import * as clean from './gulp/clean';
+import * as php from './gulp/php';
 
 /** Gulp Tasks */
 
@@ -22,3 +23,9 @@ export const cleanDev = parallel( clean.ccdev, clean.cmdev, clean.cgdev );
 
 /** Wipe Distribution Build Folders */
 export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
+
+
+export const gtest = series( php.phpDev );
+
+
+/** EOF */
