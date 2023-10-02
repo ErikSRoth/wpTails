@@ -112,6 +112,8 @@ export const themeGpl = `${themeSlug}-gpl`;
 /**
  * Versioning
  */
+export const minwp  = '6.0';
+export const minphp = '8.0';
 export const wpv = '6.1';
 export const phpv = '8.1';
 
