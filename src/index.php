@@ -1,7 +1,7 @@
 <?php
- #topBanner
+ //topBanner
 ?>
 LOL
 <?php
- #botBanner
+ //botBanner
 ?>
