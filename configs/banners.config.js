@@ -46,33 +46,50 @@ export const phpTopBnr =
     ` * \n` +
     ` */\n\n`;
 
-/** Bottom Banner for specific 'PHP' Files (#botBanner) */
-export const phpBotBnr = 
+
+/** Banner for JS Files */
+export const jsBnr = 
+    '/**\n' +
+    ` * ${tData.themeName} - A Multiuse Wordpress Theme.\n` +
+    ` * Built for WordPress Version: ${tData.wpv}, Running on PHP Version: ${tData .phpv}\n` +
+    ` * Copyright ©${tData.copyStart}-${tData.copyEnd}   ${tData.authorName}  <${tData.authorEmail}>\n` +
+    ` * Licensed under the ${tData.license} License <${tData.licenseUrl}>\n` +
+    ` * SPDX-License-Identifier: ${tData.spdxLicense}\n` +
+    ` * \n` +
+    ` * @package ${tData.themeName}\n` +
+    ` * @version ${pkg.version}\n` +
+    ` * \n` +
+    ` */\n\n`;
+
+
+/** Top of Banner for ALL CSS Files */
+export const cssTopBnr = 
+    '/**\n' +
+    ` * \n` +
+    ` * \n` +
+    ` */\n\n`;
+
+/** Bottom of Banner for WP Style CSS File */
+export const cssBotWpBnr = 
+    '/**\n' +
+    ` * \n` +
+    ` * \n` +
+    ` */\n\n`;
+
+/** Bottom of Banner for all other CSS File */
+export const cssBotBnr = 
+    '/**\n' +
+    ` * \n` +
+    ` * \n` +
+    ` */\n\n`;
+
+
+/** Bottom Attribution Banner (add More Later) */
+export const attriBnr = 
     '/**\n' +
     ` * ${tData.themeName} was built with wpTails WordPress Theme Development System\n` +
     ` * wpTails was built by Erik S. Roth  https://github.com/ErikSRoth\n` +
     ` * and is licensed under the MIT License <https://opensource.org/licenses/MIT>\n` +
     ` */\n`;
-
-
-/** Banner for JS Files */
-export const jsBnr = {
-    //
-}
-
-/** Top of Banner for CSS Files */
-export const cssTopBnr = {
-    //
-}
-
-/** Bottom of Banner for WP Style CSS File */
-export const cssBotWpBnr = {
-    //
-}
-
-/** Bottom of Banner for all other CSS File */
-export const cssBotBnr = {
-    //
-}
 
 /** EOF */
