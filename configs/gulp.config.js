@@ -39,6 +39,8 @@ export const devPath = `${rootPath}/theme`;
 
 export const distPath = `${rootPath}/dist`;
 
+export const astsPath = `${rootPath}/theme/${tData.themeMain}/assets`;
+
 /**
  * Theme types to use in project
  */
