@@ -28,10 +28,21 @@ import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
-import { stylesTopBnr, stylesBotBnr } from "../configs/banners.config";
+import { stylesTopBnr, cssBotWpBnr } from "../configs/banners.config";
 
 
-
-
+/** 
+ * This is the main stylesheet for your wordpress installation. This file is
+ * required by wordpress, however it is not used by wpTails. This file is
+ * created based on your ...(add more)
+ */
+export function wpStyles() {
+    const srcPath = [ `${gConfig.srcPath}/scss/style.scss` ];
+    const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
+    return gulp.src( srcPath )
+        .pipe( gConfig.gPlugins.replace( '//wpStyles', `${stylesTopBnr}` ) )
+        .pipe( gConfig.gPlugins.replace( '//wpStylesWarn', `${cssBotWpBnr}` ) )
+        .pipe( gulp.dest( destPath ) );
+};
 
 /** EOF */
