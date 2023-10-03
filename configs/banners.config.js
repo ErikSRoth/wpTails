@@ -64,7 +64,7 @@ export const jsBnr =
 
 /** Top of Banner for ALL CSS Files */
 export const cssTopBnr = 
-    '/*\n' +
+    '/*!\n' +
     ` * \n` +
     ` * \n` +
     ` * \n` +
@@ -83,7 +83,7 @@ export const cssTopBnr =
 
 /** Bottom of Banner for WP Style CSS File */
 export const cssBotWpBnr = 
-    '/**\n' +
+    '/*!\n' +
     ` * \n` +
     ` * \n` +
     ` * \n` +
@@ -98,7 +98,7 @@ export const cssBotWpBnr =
 
 /** Bottom of Banner for all other CSS File */
 export const cssBotBnr = 
-    '/**\n' +
+    '/*!\n' +
     ` * \n` +
     ` * \n` +
     ` * \n` +
