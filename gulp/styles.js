@@ -26,7 +26,7 @@ import * as gulp from 'gulp';
 /** Internal Dependencies */
 import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
-import { cssWpBnr, cssTopBnr, cssBotWpBnr } from "../configs/banners.config";
+import { cssWpStyleSheetBnr } from "../configs/banners.config";
 
 /** External Dependencies */
 import dartSass from 'sass';
@@ -47,8 +47,7 @@ export function wpStyles() {
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
         
         
-        .pipe( gConfig.gPlugins.replace( 'wpStyles', `${cssWpBnr}` ) )
-        //.pipe( gConfig.gPlugins.replace( 'wpStylesWarn', `${cssBotWpBnr}` ) )
+        .pipe( gConfig.gPlugins.replace( 'wpStyleSheet', `${ cssWpStyleSheetBnr }` ) )
 
         .pipe( sass().on( 'error', sass.logError ) )
 
