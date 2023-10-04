@@ -98,7 +98,7 @@ export const wpChildStyleSheet =
     `License: ${tData.license}\n` +
     `License URI: ${tData.licenseUrl}\n` +
     `Text Domain: ${tData.themeSlug}\n ` +
-    ` \n ` +
+    ` \n` +
     `Template: ${tData.themeSlug}\n` +
     `*/  \n\n  `;
 
