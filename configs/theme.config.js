@@ -47,6 +47,11 @@
 export const themeSlug = 'wptails';
 
 /**
+ * Theme URI (URL): The theme URI is the URL of your theme. This is the URL
+ */
+export const themeUri = 'https://github.com/ErikSRoth/wpTails';
+
+/**
  * Author
  */
 export const authorName = 'Erik S. Roth';
