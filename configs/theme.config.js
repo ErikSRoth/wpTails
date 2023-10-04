@@ -17,6 +17,7 @@
 'use strict';
 
 /** Internal Dependencies */
+import * as pkg from "../package.json";
 
 /** External Dependencies */
 
@@ -47,9 +48,20 @@
 export const themeSlug = 'wptails';
 
 /**
+ * Theme Version: The theme version is a string that should be in the format
+ * of 'x.x.x'. Some examples would be: '1.0.0', '1.0.1', '1.1.0', '1.1.1', '2.0.0',
+ */
+export const themeVersion = pkg.version;
+
+/**
  * Theme URI (URL): The theme URI is the URL of your theme. This is the URL
  */
 export const themeUri = 'https://github.com/ErikSRoth/wpTails';
+
+/**
+ * Theme Description: The theme description is a short description of your theme.
+ */
+export const themeDesc = 'A Multiuse Wordpress Theme';
 
 /**
  * Author
