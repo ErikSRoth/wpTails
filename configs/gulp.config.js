@@ -28,6 +28,11 @@ import * as tData from "../configs/theme.config";
 export const gPlugins = require( 'gulp-load-plugins' )();
 import path from 'path';
 
+/**
+ * 
+ */
+export const isProd = ( process.env.NODE_ENV === 'production' );
+
 /** The root path is where all the npm run commands get executed from */
 export const rootPath = process.cwd();
 /** The gulp path is where all the individual gulp process files reside */
