@@ -28,7 +28,6 @@
 /** Internal Dependencies */
 import * as gConfig from "../configs/gulp.config.js";
 import * as tData from "../configs/theme.config";
-import * as pkg from "../package.json";
 
 /** External Dependencies */
 
@@ -42,7 +41,7 @@ export const phpTopBnr =
     ` * SPDX-License-Identifier: ${tData.spdxLicense}\n` +
     ` * \n` +
     ` * @package ${tData.themeName}\n` +
-    ` * @version ${pkg.version}\n` +
+    ` * @version ${tData.themeVersion}\n` +
     ` * \n` +
     ` */\n\n`;
 
@@ -56,7 +55,7 @@ export const jsBnr =
     ` * SPDX-License-Identifier: ${tData.spdxLicense}\n` +
     ` * \n` +
     ` * @package ${tData.themeName}\n` +
-    ` * @version ${pkg.version}\n` +
+    ` * @version ${tData.themeVersion}\n` +
     ` * \n` +
     ` */\n \n`;
 
@@ -67,8 +66,8 @@ export const cssWpStyleSheetBnr =
     `Theme URI: ${tData.themeUri}\n` +
     `Author: ${tData.authorName}\n` +
     `Author URI: ${tData.authorUrl}\n` +
-    `Description:\n` +
-    `Version:\n` +
+    `Description: ${tData.themeDesc}}\n` +
+    `Version: ${tData.themeVersion}\n` +
     `License:\n` +
     `License URI:\n` +
     `Text Domain: ${tData.themeSlug}\n` +
