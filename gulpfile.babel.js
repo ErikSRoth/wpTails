@@ -27,7 +27,7 @@ export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
 
 
 
-export const setupDev = series( clean.cleanDev. parallel(styles.wpChildStyles) );
+export const setupDev = series( cleanDev, parallel( styles.wpChildStyles ) );
 
 
 export const gtest = series( styles.wpStyles );
