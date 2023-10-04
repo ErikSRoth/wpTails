@@ -82,8 +82,8 @@ export const cssTopBnr =
     ` */\n\n`;
 
 /** Bottom of Banner for WP Style CSS File */
-export const cssBotWpBnr = 
-    '/*!\n' +
+export const cssWpBnr = 
+    '/*! start\n' +
     ` * \n` +
     ` * \n` +
     ` * \n` +
@@ -94,6 +94,22 @@ export const cssBotWpBnr =
     ` * \n` +
     ` * \n` +
     ` * \n` +
+    ` * \n` +
+    ` * \n` +
+    ` * \n` +
+    ` * end\n` +
+    ` */\n\n\n` +
+    '/*! start\n' +
+    ` * \n` +
+    ` * \n` +
+    ` * \n` +
+    ` * \n` +
+    ` * \n` +
+    ` * \n` +
+    ` * \n` +
+    ` * \n` +
+    ` * \n` +
+    ` * end\n` +
     ` */\n\n`;
 
 /** Bottom of Banner for all other CSS File */
