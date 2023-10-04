@@ -46,12 +46,11 @@ export const phpTopBnr =
     ` * \n` +
     ` */\n\n`;
 
-
 /** Banner for JS Files */
 export const jsBnr = 
     '/**\n' +
     ` * ${tData.themeName} - A Multiuse Wordpress Theme.\n` +
-    ` * Built for WordPress Version: ${tData.wpv}, Running on PHP Version: ${tData .phpv}\n` +
+    ` * Built for WordPress Version: ${tData.wpv}, Running on PHP Version: ${tData.phpv}\n` +
     ` * Copyright ©${tData.copyStart}-${tData.copyEnd}   ${tData.authorName}  <${tData.authorEmail}>\n` +
     ` * Licensed under the ${tData.license} License <${tData.licenseUrl}>\n` +
     ` * SPDX-License-Identifier: ${tData.spdxLicense}\n` +
@@ -59,41 +58,21 @@ export const jsBnr =
     ` * @package ${tData.themeName}\n` +
     ` * @version ${pkg.version}\n` +
     ` * \n` +
-    ` */\n\n`;
-
-
-/** Top of Banner for ALL CSS Files */
-export const cssTopBnr = 
-    '/*!\n' +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` */\n\n`;
+    ` */\n \n`;
 
 /** Bottom of Banner for WP Style CSS File */
-export const cssWpBnr = 
-    '/*! start\n' +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
-    ` * \n` +
+export const cssWpStyleSheetBnr = 
+    `/*!\n` +
+    `Theme Name: ${tData.themeName}\n` +
+    `Theme URI: ${tData.themeUri}\n` +
+    `Author: ${tData.authorName}\n` +
+    `Author URI: ${tData.authorUrl}\n` +
+    `Description:\n` +
+    `Version:\n` +
+    `License:\n` +
+    `License URI:\n` +
+    `Text Domain: ${tData.themeSlug}\n` +
+    `Tags:\n\n` +
     ` * \n` +
     ` * \n` +
     ` * \n` +
@@ -113,7 +92,7 @@ export const cssWpBnr =
     ` */\n\n`;
 
 /** Bottom of Banner for all other CSS File */
-export const cssBotBnr = 
+export const wpChildStyleSheet = 
     '/*!\n' +
     ` * \n` +
     ` * \n` +
@@ -127,6 +106,24 @@ export const cssBotBnr =
     ` * \n` +
     ` */\n\n`;
 
+    /** Top of Banner for ALL Other CSS Files */
+export const cssTopBnr = 
+'/*!\n' +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` * \n` +
+` */\n\n`;
 
 /** Bottom Attribution Banner (add More Later) */
 export const attriBnr = 
