@@ -30,7 +30,7 @@ export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
 
 
 
-export const gtest = series( styles.wpChildStyles );
+export const gtest = series( styles.wpChildStyles, styles.wpStyles );
 
 
 /** EOF */
