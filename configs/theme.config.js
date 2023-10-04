@@ -64,6 +64,15 @@ export const themeUri = 'https://github.com/ErikSRoth/wpTails';
 export const themeDesc = 'A Multiuse Wordpress Theme';
 
 /**
+ * Theme Tags: The theme tags are a comma separated list of tags that describe
+ * your theme. These tags are used by the Wordpress Theme Repository to help
+ * users find your theme. Some examples would be: 'blog', 'e-commerce', 'portfolio',
+ * 'responsive', 'custom-background', 'custom-logo', 'custom-menu', 'featured-images',
+ * 'footer-widgets', 'full-width-template', 'theme-options', 'threaded-comments', etc.
+ */
+export const themeTags = 'blog, e-commerce, portfolio, responsive, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments';
+
+/**
  * Author
  */
 export const authorName = 'Erik S. Roth';
