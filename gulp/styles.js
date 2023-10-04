@@ -26,7 +26,7 @@ import * as gulp from 'gulp';
 /** Internal Dependencies */
 import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
-import { cssWpStyleSheetBnr } from "../configs/banners.config";
+import * as cssBanner from "../configs/banners.config";
 
 /** External Dependencies */
 import dartSass from 'sass';
@@ -45,18 +45,33 @@ export function wpStyles() {
     const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
     return gulp.src( srcPath )
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
-        
-        
-        .pipe( gConfig.gPlugins.replace( 'wpStyleSheet', `${ cssWpStyleSheetBnr }` ) )
+
+        .pipe( gConfig.gPlugins.replace( 'wpStyleSheet', `${ cssBanner.cssWpStyleSheetBnr }` ) )
 
         .pipe( sass().on( 'error', sass.logError ) )
 
         .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
 
-        .pipe( gulp.dest( destPath ) );
+        .pipe( gulp.dest( `${ destPath }` ) );
 };
 
 /** WP-Child style.css */
+export function wpChildStyles() {
+    const srcPath = [ `${gConfig.srcPath}/scss/style-child.scss` ];
+    const destPath = `${gConfig.devPath}/${tData.themeChild}/`;
+    return gulp.src( srcPath )
+        .pipe( gConfig.gPlugins.rename( 'style.css' ) )
+
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
+        
+        .pipe( gConfig.gPlugins.replace( 'wpChildStyleSheet', `${ cssBanner.wpChildStyleSheet }` ) )
+
+        .pipe( sass().on( 'error', sass.logError ) )
+
+        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+
+        .pipe( gulp.dest( `${ destPath }` ) );
+};
 
 /** Main App CSS */
 
