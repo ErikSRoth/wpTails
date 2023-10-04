@@ -55,21 +55,22 @@ export function wpStyles() {
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
-/** WP-Child style.css */
+/** 
+ * This is the child stylesheet for your wordpress theme installation. This file is
+ * required by wordpress for your child-theme. This file is where you can add custom
+ * CSS for your theme Providing you are using the child theme for all of your custom
+ * code. This file is created automatically based on your theme settings in your
+ * theme.config.js file, so if you have issues check there first. 
+ */
 export function wpChildStyles() {
     const srcPath = [ `${gConfig.srcPath}/scss/style-child.scss` ];
     const destPath = `${gConfig.devPath}/${tData.themeChild}/`;
     return gulp.src( srcPath )
         .pipe( gConfig.gPlugins.rename( 'style.css' ) )
-
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
-        
         .pipe( gConfig.gPlugins.replace( 'wpChildStyleSheet', `${ cssBanner.wpChildStyleSheet }` ) )
-
         .pipe( sass().on( 'error', sass.logError ) )
-
         .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
-
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
