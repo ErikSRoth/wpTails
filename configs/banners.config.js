@@ -68,6 +68,7 @@ export const cssWpStyleSheetBnr =
     `Author: ${tData.authorName}\n` +
     `Author URI: ${tData.authorUrl}\n` +
     `Description: ${tData.themeDesc}\n` +
+    `Tags: ${tData.themeTags}\n` +
     `Version: ${tData.themeVersion}\n` +
     `Requires at least: ${tData.minwp}\n` +
     `Tested up to: ${tData.wpv}\n` +
@@ -90,6 +91,7 @@ export const wpChildStyleSheet =
     `Author: ${tData.authorName}\n` +
     `Author URI: ${tData.authorUrl}\n` +
     `Description: ${tData.themeDesc}\n` +
+    `Tags: ${tData.themeTags}\n` +
     `Version: ${tData.themeVersion}\n` +
     `Requires at least: ${tData.minwp}\n` +
     `Tested up to: ${tData.wpv}\n` +
