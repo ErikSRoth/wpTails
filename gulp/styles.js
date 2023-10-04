@@ -26,10 +26,14 @@ import * as gulp from 'gulp';
 /** Internal Dependencies */
 import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
+import { cssWpBnr, cssTopBnr, cssBotWpBnr } from "../configs/banners.config";
 
 /** External Dependencies */
-import { stylesTopBnr, cssBotWpBnr } from "../configs/banners.config";
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
 
+/** */
+const sass = gulpSass( dartSass );         
 
 /** 
  * This is the main stylesheet for your wordpress installation. This file is
@@ -40,9 +44,35 @@ export function wpStyles() {
     const srcPath = [ `${gConfig.srcPath}/scss/style.scss` ];
     const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
     return gulp.src( srcPath )
-        .pipe( gConfig.gPlugins.replace( '//wpStyles', `${stylesTopBnr}` ) )
-        .pipe( gConfig.gPlugins.replace( '//wpStylesWarn', `${cssBotWpBnr}` ) )
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
+        
+        
+        .pipe( gConfig.gPlugins.replace( 'wpStyles', `${cssWpBnr}` ) )
+        //.pipe( gConfig.gPlugins.replace( 'wpStylesWarn', `${cssBotWpBnr}` ) )
+
+        .pipe( sass().on( 'error', sass.logError ) )
+
+        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+
         .pipe( gulp.dest( destPath ) );
 };
+
+/** WP-Child style.css */
+
+/** Main App CSS */
+
+/** App Admin CSS */
+
+/** APP GPL CSS */
+
+/** APP RTL CSS */
+
+/** APP RTL Admin CSS */
+
+/** APP RTL GPL CSS */
+
+/** APP RTL Child CSS */
+
+
 
 /** EOF */
