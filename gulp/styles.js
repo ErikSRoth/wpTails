@@ -85,7 +85,14 @@ export function appStyles() {
 
 /** App Admin CSS */
 export function appAdminStyles() {
-    //
+    const srcPath = [ `${gConfig.srcPath}/scss/${tData.themeSlug}-admin.scss` ];
+    const destPath = `${gConfig.astsPath}/css/`;
+    return gulp.src( srcPath )
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
+        .pipe( gConfig.gPlugins.replace( 'cssFileBanner', `${ cssBanner.cssTopBnr}` ) )
+        .pipe( sass().on( 'error', sass.logError ) )
+        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+        .pipe( gulp.dest( `${ destPath }` ) );
 };
 
 /** APP GPL CSS */
