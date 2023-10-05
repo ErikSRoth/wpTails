@@ -72,19 +72,38 @@ export function wpChildStyles() {
 };
 
 /** Main App CSS */
+export function appStyles() {
+    //
+};
 
 /** App Admin CSS */
+export function appAdminStyles() {
+    //
+};
 
 /** APP GPL CSS */
+export function appGplStyles() {
+    //
+};
 
 /** APP RTL CSS */
+export function appRtlStyles() {
+    //
+};
 
 /** APP RTL Admin CSS */
+export function appRtlAdminStyles() {
+    //
+};
 
 /** APP RTL GPL CSS */
+export function appRtlGplStyles() {
+    //
+};
 
 /** APP RTL Child CSS */
-
-
+export function appRtlChildStyles() {
+    //
+};
 
 /** EOF */
