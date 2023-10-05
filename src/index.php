@@ -2,6 +2,3 @@
  //topBanner
 ?>
 LOL
-<?php
- //botBanner
-?>
