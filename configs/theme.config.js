@@ -17,6 +17,7 @@
 'use strict';
 
 /** Internal Dependencies */
+import * as pkg from "../package.json";
 
 /** External Dependencies */
 
@@ -45,6 +46,31 @@
  * 'my-theme-2023' or simply 'mytheme'. 
  */
 export const themeSlug = 'wptails';
+
+/**
+ * Theme Version: The theme version is a string that should be in the format
+ * of 'x.x.x'. Some examples would be: '1.0.0', '1.0.1', '1.1.0', '1.1.1', '2.0.0',
+ */
+export const themeVersion = pkg.version;
+
+/**
+ * Theme URI (URL): The theme URI is the URL of your theme. This is the URL
+ */
+export const themeUri = 'https://github.com/ErikSRoth/wpTails';
+
+/**
+ * Theme Description: The theme description is a short description of your theme.
+ */
+export const themeDesc = 'A Multiuse Wordpress Theme';
+
+/**
+ * Theme Tags: The theme tags are a comma separated list of tags that describe
+ * your theme. These tags are used by the Wordpress Theme Repository to help
+ * users find your theme. Some examples would be: 'blog', 'e-commerce', 'portfolio',
+ * 'responsive', 'custom-background', 'custom-logo', 'custom-menu', 'featured-images',
+ * 'footer-widgets', 'full-width-template', 'theme-options', 'threaded-comments', etc.
+ */
+export const themeTags = 'blog, e-commerce, portfolio, responsive, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments';
 
 /**
  * Author
@@ -82,7 +108,7 @@ export const buildGpl = true;
 export const useBanners = true;
 
 /**
- * Banner infformation
+ * Banner Information
 */
 export const copyStart = '2022';
 
@@ -112,6 +138,8 @@ export const themeGpl = `${themeSlug}-gpl`;
 /**
  * Versioning
  */
+export const minwp  = '6.0';
+export const minphp = '8.0';
 export const wpv = '6.1';
 export const phpv = '8.1';
 

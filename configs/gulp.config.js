@@ -28,6 +28,11 @@ import * as tData from "../configs/theme.config";
 export const gPlugins = require( 'gulp-load-plugins' )();
 import path from 'path';
 
+/**
+ * 
+ */
+export const isProd = ( process.env.NODE_ENV === 'production' );
+
 /** The root path is where all the npm run commands get executed from */
 export const rootPath = process.cwd();
 /** The gulp path is where all the individual gulp process files reside */
@@ -38,6 +43,8 @@ export const srcPath = `${rootPath}/src`;
 export const devPath = `${rootPath}/theme`;
 
 export const distPath = `${rootPath}/dist`;
+
+export const astsPath = `${rootPath}/theme/${tData.themeMain}/assets`;
 
 /**
  * Theme types to use in project
