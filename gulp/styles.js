@@ -73,7 +73,14 @@ export function wpChildStyles() {
 
 /** Main App CSS */
 export function appStyles() {
-    //
+    const srcPath = [ `${gConfig.srcPath}/scss/${tData.themeSlug}.scss` ];
+    const destPath = `${gConfig.astsPath}/css/`;
+    return gulp.src( srcPath )
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
+        .pipe( gConfig.gPlugins.replace( 'cssFileBanner', `${ cssBanner.cssTopBnr}` ) )
+        .pipe( sass().on( 'error', sass.logError ) )
+        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+        .pipe( gulp.dest( `${ destPath }` ) );
 };
 
 /** App Admin CSS */
