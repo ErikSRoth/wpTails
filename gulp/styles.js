@@ -32,26 +32,23 @@ import * as cssBanner from "../configs/banners.config";
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 
-/** */
+/** SASS/SCSS Processing Command */
 const sass = gulpSass( dartSass );         
 
 /** 
  * This is the main stylesheet for your wordpress installation. This file is
  * required by wordpress, however it is not used by wpTails. This file is
- * created based on your ...(add more)
+ * created automatically based on your theme settings in your
+ * theme.config.js file, so if you have issues check there first. 
  */
 export function wpStyles() {
     const srcPath = [ `${gConfig.srcPath}/scss/style.scss` ];
     const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
     return gulp.src( srcPath )
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
-
         .pipe( gConfig.gPlugins.replace( 'wpStyleSheet', `${ cssBanner.cssWpStyleSheetBnr }` ) )
-
         .pipe( sass().on( 'error', sass.logError ) )
-
         .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
-
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
