@@ -146,7 +146,7 @@ export const cssTopBnr =
     `${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
     `License: ${tData.license}\n` +
     `License URI: ${tData.licenseUrl}\n` +
-    `Text Domain: ${tData.themeSlug}\n ` +
+    `Text Domain: ${tData.themeSlug}\n` +
     `Version: ${tData.themeVersion}\n` +
     `*/ \n \n `;
 
