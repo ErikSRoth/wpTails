@@ -143,22 +143,13 @@ export const gplStyleSheet =
  * Banner for ALL Other CSS Files
  */
 export const cssTopBnr = 
-'/*!\n' +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` * \n` +
-` */\n\n`;
+    '/*!\n' +
+    `${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
+    `License: ${tData.license}\n` +
+    `License URI: ${tData.licenseUrl}\n` +
+    `Text Domain: ${tData.themeSlug}\n ` +
+    `Version: ${tData.themeVersion}\n` +
+    `*/ \n \n `;
 
 /** GPL Extra */
 export const gplExtra =
