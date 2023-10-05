@@ -138,7 +138,6 @@ export const gplStyleSheet =
     `Use it to make something cool, have fun, and share what you've learned with others.\n ` +
     `*/`;
 
-
 /** 
  * Banner for ALL Other CSS Files
  */
@@ -150,13 +149,6 @@ export const cssTopBnr =
     `Text Domain: ${tData.themeSlug}\n ` +
     `Version: ${tData.themeVersion}\n` +
     `*/ \n \n `;
-
-/** GPL Extra */
-export const gplExtra =
-` * \n` +
-    `This theme, like WordPress, is licensed under the GPL.\n` +
-    `Use it to make something cool, have fun, and share what you've learned with others.\n ` +
-    `\n` ;
 
 /** Bottom Attribution Banner (add More Later) */
 export const attriBnr = 
