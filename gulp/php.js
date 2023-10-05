@@ -29,7 +29,7 @@ import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
-import { phpTopBnr, attriBnr } from "../configs/banners.config";
+import { phpTopBnr } from "../configs/banners.config";
 
 /** PHP Main Theme  */
 export function phpDev() {
@@ -37,7 +37,6 @@ export function phpDev() {
     const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
     return gulp.src( srcPath )
         .pipe( gConfig.gPlugins.replace( '//topBanner', `${phpTopBnr}` ) )
-        .pipe( gConfig.gPlugins.replace( '//botBanner', `${attriBnr}` ) )
         .pipe( gulp.dest( destPath ) );
 };
 
