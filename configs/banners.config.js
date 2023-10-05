@@ -150,12 +150,4 @@ export const cssTopBnr =
     `Version: ${tData.themeVersion}\n` +
     `*/ \n \n `;
 
-/** Bottom Attribution Banner (add More Later) */
-export const attriBnr = 
-    '/**\n' +
-    ` * ${tData.themeName} was built with wpTails WordPress Theme Development System\n` +
-    ` * wpTails was built by Erik S. Roth  https://github.com/ErikSRoth\n` +
-    ` * and is licensed under the MIT License <https://opensource.org/licenses/MIT>\n` +
-    ` */\n`;
-
 /** EOF */
