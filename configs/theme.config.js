@@ -108,7 +108,7 @@ export const buildGpl = true;
 export const useBanners = true;
 
 /**
- * Banner infformation
+ * Banner Information
 */
 export const copyStart = '2022';
 
