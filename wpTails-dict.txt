@@ -1,16 +1,21 @@
 !# This file is a cSpell Custom Dictionary File for this theme repository.
 !# WARNING: This file will alphabetize itself as new words are added.
+!WPtails
+!WPTails
+!WPtailz
+!WPTailz
 ccdev
 ccdist
 cgdev
 cgdist
 cmdev
 cmdist
+Customizer
+customizer
 gulpfile
+minphp
+minwp
 mytheme
+phpv
 wptails
 wpTails
-!WPtails
-!WPTails
-!WPtailz
-!WPTailz
