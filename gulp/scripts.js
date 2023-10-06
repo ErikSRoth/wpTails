@@ -31,3 +31,10 @@ import * as tData from "../configs/theme.config";
 /** External Dependencies */
 import { phpTopBnr } from "../configs/banners.config";
 
+/** 
+ * JS Functions
+*/
+export function jsBuild() {
+    const srcPath = [ `${gConfig.srcPath}/js/*.js` ];
+    const destPath = `${gConfig.astsPath}/js/`;
+};
