@@ -41,6 +41,9 @@ export function jsBuild() {
         .pipe( gConfig.gPlugins.replace( 'jsTopBnr', `${ jsBnr }` ) )
         .pipe( gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()) )
         .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
+
+        .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}.js` ) )
         
+        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
