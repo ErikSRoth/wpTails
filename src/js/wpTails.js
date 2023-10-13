@@ -1,1 +1,3 @@
-jsTopBar
+function testMe() {
+  console.log('testMe');
+}
