@@ -46,18 +46,15 @@ export const phpTopBnr =
     ` */\n\n`;
 
 /** Banner for JS Files */
-export const jsBnr = 
-    '/**\n' +
-    ` * ${tData.themeName} - A Multiuse Wordpress Theme.\n` +
-    ` * Built for WordPress Version: ${tData.wpv}, Running on PHP Version: ${tData.phpv}\n` +
-    ` * Copyright ©${tData.copyStart}-${tData.copyEnd}   ${tData.authorName}  <${tData.authorEmail}>\n` +
-    ` * Licensed under the ${tData.license} License <${tData.licenseUrl}>\n` +
-    ` * SPDX-License-Identifier: ${tData.spdxLicense}\n` +
-    ` * \n` +
-    ` * @package ${tData.themeName}\n` +
-    ` * @version ${tData.themeVersion}\n` +
-    ` * \n` +
-    ` */\n \n`;
+export const jsBanner = 
+    //'/**\n' +
+    `${tData.themeName} - ${tData.themeDesc} \n` +
+    `Built for WordPress Version: ${tData.wpv}, Running on PHP Version: ${tData.phpv} \n` +
+    `@copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorCompany}  ${tData.authorCompanyUrl} \n` +
+    `@license ${tData.license}  ${tData.licenseUrl} \n` +
+    `@author ${tData.authorName} <${tData.authorEmail}> ${tData.authorUrl} \n` +
+    `@package ${tData.themeName}\n` +
+    `@version ${tData.themeVersion}`;
 
 /** 
  * Banner for WP Style CSS File
