@@ -39,7 +39,7 @@ import { jsBanner } from "../configs/banners.config";
 export function jsBuildMain() {
     const srcPath = [ `${gConfig.srcPath}/js/${tData.themeSlug}.js`, `${gConfig.srcPath}/js/partials/app/*.js` ];
     const destPath = `${gConfig.astsPath}/js/`;
-    return gulp.src( srcPath )
+    return gulp.src( srcPath, {"allowEmpty": true} )
         .pipe( gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()) )
         .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
         .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}.js` ) )
@@ -53,7 +53,7 @@ export function jsBuildMain() {
 export function jsBuildAdmin() {
     const srcPath = [ `${gConfig.srcPath}/js/${tData.themeSlug}-admin.js`, `${gConfig.srcPath}/js/partials/admin/*.js` ];
     const destPath = `${gConfig.astsPath}/js/`;
-    return gulp.src( srcPath )
+    return gulp.src( srcPath, {"allowEmpty": true} )
         .pipe( gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()) )
         .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
         .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}-admin.js` ) )
@@ -67,7 +67,7 @@ export function jsBuildAdmin() {
 export function jsBuildTools() {
     const srcPath = [ `${gConfig.srcPath}/js/${tData.themeSlug}-tools.js`, `${gConfig.srcPath}/js/partials/tools/*.js` ];
     const destPath = `${gConfig.astsPath}/js/`;
-    return gulp.src( srcPath )
+    return gulp.src( srcPath, {"allowEmpty": true} )
         .pipe( gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()) )
         .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
         .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}-tools.js` ) )
