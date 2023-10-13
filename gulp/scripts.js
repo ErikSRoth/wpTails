@@ -34,6 +34,8 @@ import { jsBanner } from "../configs/banners.config";
 /** 
  * JS Functions
 */
+
+/** App Main JS */
 export function jsBuildMain() {
     const srcPath = [ `${gConfig.srcPath}/js/${tData.themeSlug}.js`, `${gConfig.srcPath}/js/partials/app/*.js` ];
     const destPath = `${gConfig.astsPath}/js/`;
@@ -46,3 +48,33 @@ export function jsBuildMain() {
         .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
+
+/** App Admin JS */
+export function jsBuildAdmin() {
+    const srcPath = [ `${gConfig.srcPath}/js/${tData.themeSlug}-admin.js`, `${gConfig.srcPath}/js/partials/admin/*.js` ];
+    const destPath = `${gConfig.astsPath}/js/`;
+    return gulp.src( srcPath )
+        .pipe( gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()) )
+        .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
+        .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}-admin.js` ) )
+        .pipe( gConfig.gPlugins.if( gConfig.isProd, gConfig.gPlugins.uglify() ) )
+        .pipe( gConfig.gPlugins.headerComment( jsBanner  ) )
+        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+        .pipe( gulp.dest( `${ destPath }` ) );
+};
+
+/** App tools JS */
+export function jsBuildTools() {
+    const srcPath = [ `${gConfig.srcPath}/js/${tData.themeSlug}-tools.js`, `${gConfig.srcPath}/js/partials/tools/*.js` ];
+    const destPath = `${gConfig.astsPath}/js/`;
+    return gulp.src( srcPath )
+        .pipe( gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()) )
+        .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
+        .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}-tools.js` ) )
+        .pipe( gConfig.gPlugins.if( gConfig.isProd, gConfig.gPlugins.uglify() ) )
+        .pipe( gConfig.gPlugins.headerComment( jsBanner  ) )
+        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+        .pipe( gulp.dest( `${ destPath }` ) );
+};
+
+/** EOF */
