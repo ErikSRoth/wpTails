@@ -59,8 +59,8 @@ export const jsBanner =
 /** 
  * Banner for WP Style CSS File
  */
-export const cssWpStyleSheetBnr = 
-    `/*!\n` +
+export const wpStyleBanner = 
+    //`/*!\n` +
     `Theme Name: ${tData.themeName}\n` +
     `Theme URI: ${tData.themeUri}\n` +
     `${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
@@ -86,14 +86,12 @@ export const cssWpStyleSheetBnr =
     `included with your theme package. If you do not have a child theme, then please contact the author \n` +
     `of this theme at ( ${tData.authorEmail} ) to obtain one as anything changed within the main theme \n` +
     `files directly, will be overwritten and lost when the theme is updated.\n` +
-    ` \n` +
-    `*/`;
+    ` \n`;
 
 /** 
  * Banner for WP Child Style CSS File
  */
-export const wpChildStyleSheet = 
-    `/*!\n` +
+export const wpChildStyleBanner = 
     `Theme Name: ${tData.themeName} Child Theme\n` +
     `Theme URI: ${tData.themeUri}\n` +
     `${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
@@ -107,8 +105,7 @@ export const wpChildStyleSheet =
     `*** DO NOT MODIFY ANYTHING ABOVE THIS LINE OR YOU WILL BREAK YOUR THEME! ***\n` +
     ` \n` +
     `Use this child CSS page to overwrite the ${tData.themeName} theme CSS values or to create\n` + 
-    `your own CSS customizations. Add your custom code below this comment block.\n` +
-    '*/';
+    `your own CSS customizations. Add your custom code below this comment block.\n`;
 
 /**
  * Banner for GPL Style CSS File
@@ -138,7 +135,7 @@ export const gplStyleSheet =
 /** 
  * Banner for ALL Other CSS Files
  */
-export const cssTopBnr = 
+export const cssBanner = 
     '/*!\n' +
     `${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
     `License: ${tData.license}\n` +
