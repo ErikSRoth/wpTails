@@ -78,6 +78,8 @@ export const themeTags = 'blog, e-commerce, portfolio, responsive, custom-backgr
 export const authorName = 'Erik S. Roth';
 export const authorEmail = 'erikroth@isu.edu';
 export const authorUrl = 'https://erikroth.me';
+export const authorCompany = 'Idaho State University';
+export const authorCompanyUrl = 'https://isu.edu';
 
 /**
  * License

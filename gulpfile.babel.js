@@ -16,6 +16,7 @@ const tConfig = require( "./configs/theme.config" );
 import * as clean from './gulp/clean';
 import * as php from './gulp/php';
 import * as styles from './gulp/styles';
+import * as scripts from './gulp/scripts';
 
 /** Gulp Tasks */
 
@@ -27,10 +28,14 @@ export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
 
 
 
-export const setupDev = series( cleanDev, parallel( styles.wpChildStyles, styles.wpStyles ), parallel( styles.appAdminStyles, styles.appStyles ) );
+export const setupDev = series( cleanDev, 
+                                parallel( styles.wpChildStyles, styles.wpStyles ), 
+                                parallel( styles.appAdminStyles, styles.appStyles ),
+                                parallel( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ), 
+                                );
 
 
-//export const gtest = series( );
+//export const gtest = series();
 
 
 /** EOF */
