@@ -35,7 +35,7 @@ export const setupDev = series( cleanDev,
                                 );
 
 
-export const gtest = series( styles.wpStyles );
+export const gtest = series( styles.wpChildStyles );
 
 
 /** EOF */
