@@ -45,10 +45,13 @@ export function wpStyles() {
     const srcPath = [ `${gConfig.srcPath}/scss/style.scss` ];
     const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
     return gulp.src( srcPath )
-        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
+        //.pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
+
         .pipe( gConfig.gPlugins.replace( 'wpStyleSheet', `${ cssBanner.cssWpStyleSheetBnr }` ) )
+
         .pipe( sass().on( 'error', sass.logError ) )
-        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+        
+        //.pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
