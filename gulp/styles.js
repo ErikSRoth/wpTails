@@ -45,15 +45,14 @@ export function wpStyles() {
     const srcPath = [ `${gConfig.srcPath}/scss/style.scss` ];
     const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
     return gulp.src( srcPath )
-        //.pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
 
-        //.pipe( gConfig.gPlugins.replace( 'wpStyleSheet', `${ cssBanner.cssWpStyleSheetBnr }` ) )
 
         .pipe( sass().on( 'error', sass.logError ) )
 
-        .pipe( gConfig.gPlugins.headerComment( cssBanner.wpStyleBanner  ) )
+        .pipe( gConfig.gPlugins.headerComment( cssBanner.wpStyleBanner ) )
 
-        //.pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
@@ -70,9 +69,12 @@ export function wpChildStyles() {
     return gulp.src( srcPath )
         .pipe( gConfig.gPlugins.rename( 'style.css' ) )
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
-        .pipe( gConfig.gPlugins.replace( 'wpChildStyleSheet', `${ cssBanner.wpChildStyleSheet }` ) )
+        
         .pipe( sass().on( 'error', sass.logError ) )
-        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+        .pipe( gConfig.gPlugins.headerComment( cssBanner.wpChildStyleBanner ) )
+
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
+
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
@@ -82,9 +84,11 @@ export function appStyles() {
     const destPath = `${gConfig.astsPath}/css/`;
     return gulp.src( srcPath )
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
-        .pipe( gConfig.gPlugins.replace( 'cssFileBanner', `${ cssBanner.cssTopBnr}` ) )
+
         .pipe( sass().on( 'error', sass.logError ) )
-        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+
+        .pipe( gConfig.gPlugins.headerComment( cssBanner.cssBanner ) )
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
