@@ -30,7 +30,7 @@ import * as cssBanner from "../configs/banners.config";
 
 /** External Dependencies */
 import dartSass from 'sass';
-import gulpSass from 'gulp-sass';
+import gulpSass from 'gulp-sass'; 
 
 /** SASS/SCSS Processing Command */
 const sass = gulpSass( dartSass );         
