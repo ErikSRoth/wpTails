@@ -51,7 +51,7 @@ export function wpStyles() {
 
         .pipe( sass().on( 'error', sass.logError ) )
 
-        .pipe( gConfig.gPlugins.headerComment( cssBanner  ) )
+        .pipe( gConfig.gPlugins.headerComment( cssBanner.wpStyleBanner  ) )
 
         //.pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
         .pipe( gulp.dest( `${ destPath }` ) );
