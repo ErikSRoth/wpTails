@@ -31,7 +31,7 @@ export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
 export const setupDev = series( cleanDev, parallel( styles.wpChildStyles, styles.wpStyles ), parallel( styles.appAdminStyles, styles.appStyles ) );
 
 
-export const gtest = series( scripts.jsBuildMain )
+export const gtest = series( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools );
 
 
 /** EOF */
