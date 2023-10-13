@@ -34,18 +34,15 @@ import { jsBanner } from "../configs/banners.config";
 /** 
  * JS Functions
 */
-export function jsBuild() {
-    const srcPath = [ `${gConfig.srcPath}/js/${tData.themeSlug}.js` ]; //, `${gConfig.srcPath}/js/partials/app/*.js` ];
+export function jsBuildMain() {
+    const srcPath = [ `${gConfig.srcPath}/js/${tData.themeSlug}.js`, `${gConfig.srcPath}/js/partials/app/*.js` ];
     const destPath = `${gConfig.astsPath}/js/`;
     return gulp.src( srcPath )
-        
-        //.pipe( gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()) )
-
+        .pipe( gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()) )
+        .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
+        .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}.js` ) )
+        .pipe( gConfig.gPlugins.if( gConfig.isProd, gConfig.gPlugins.uglify() ) )
         .pipe( gConfig.gPlugins.headerComment( jsBanner  ) )
-       // .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
-
-       // .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}.js` ) )
-        
-        //.pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
