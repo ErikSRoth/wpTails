@@ -29,21 +29,23 @@ import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
-import { jsBnr } from "../configs/banners.config";
+import { jsBanner } from "../configs/banners.config";
 
 /** 
  * JS Functions
 */
 export function jsBuild() {
-    const srcPath = [ `${gConfig.srcPath}/js/${tData.themeSlug}.js`, `${gConfig.srcPath}/js/${tData.themeSlug}/partials/app/*.js` ];
+    const srcPath = [ `${gConfig.srcPath}/js/${tData.themeSlug}.js` ]; //, `${gConfig.srcPath}/js/partials/app/*.js` ];
     const destPath = `${gConfig.astsPath}/js/`;
     return gulp.src( srcPath )
-        .pipe( gConfig.gPlugins.replace( 'jsTopBnr', `${ jsBnr }` ) )
-        .pipe( gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()) )
-        .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
-
-        .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}.js` ) )
         
-        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+        //.pipe( gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()) )
+
+        .pipe( gConfig.gPlugins.headerComment( jsBanner  ) )
+       // .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
+
+       // .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}.js` ) )
+        
+        //.pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
