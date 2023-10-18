@@ -32,18 +32,19 @@ import * as tData from "../configs/theme.config";
 /** External Dependencies */
 
 /** Top Banner for all 'PHP' Files (#topBanner) */
-export const phpTopBnr = 
-    '/**\n' +
+export const phpBanner =
+    `<?php\n` + 
+    `/**\n` +
     ` * ${tData.themeName} - A Multiuse Wordpress Theme.\n` +
-    ` * Built for WordPress Version: ${tData.wpv}, Running on PHP Version: ${tData .phpv}\n` +
+    ` * ${tData.themeUri}\n` +
+    ` * Built for WordPress Minimum Version: ${tData.minwp}, Running on PHP Minimum Version: ${tData.minphp}\n` +
+    ` * Optimized for WordPress Version: ${tData.wpv}, Running on PHP Version: ${tData .phpv}\n` +
     ` * Copyright ©${tData.copyStart}-${tData.copyEnd}   ${tData.authorName}  <${tData.authorEmail}>\n` +
     ` * Licensed under the ${tData.license} License <${tData.licenseUrl}>\n` +
-    ` * SPDX-License-Identifier: ${tData.spdxLicense}\n` +
-    ` * \n` +
+    ` *\n` +
     ` * @package ${tData.themeName}\n` +
     ` * @version ${tData.themeVersion}\n` +
-    ` * \n` +
-    ` */\n\n`;
+    ` */\n`;
 
 /** Banner for JS Files */
 export const jsBanner = 
