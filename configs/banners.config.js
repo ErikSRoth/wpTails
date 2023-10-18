@@ -44,7 +44,8 @@ export const phpBanner =
     ` *\n` +
     ` * @package ${tData.themeName}\n` +
     ` * @version ${tData.themeVersion}\n` +
-    ` */\n`;
+    ` */\n` +
+    `?>\n`;
 
 /** Banner for JS Files */
 export const jsBanner = 
