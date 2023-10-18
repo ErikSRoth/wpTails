@@ -33,13 +33,15 @@ import { phpBanner } from "../configs/banners.config";
 
 /** PHP Main Theme  */
 export function phpDev() {
-    const srcPath = [ `${gConfig.srcPath}/**/*.php` ];
+    const srcPath = [ `${gConfig.srcPath}/**/*.php`, `!${gConfig.srcPath}/functions-child.php` ];
     const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
     return gulp.src( srcPath )
         .pipe( gConfig.gPlugins.banner( phpBanner ) )
         .pipe( gulp.dest( destPath ) );
 };
 
+/** PHP Child Theme  */
 
+/** PHP GPL Theme  */
 
 /** EOF */
