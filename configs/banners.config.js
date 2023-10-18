@@ -65,33 +65,34 @@ export const jsBanner =
  * Banner for WP Style CSS File
  */
 export const wpStyleBanner = 
-    //`/*!\n` +
-    `Theme Name: ${tData.themeName}\n` +
-    `Theme URI: ${tData.themeUri}\n` +
-    `${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
-    `Author: ${tData.authorName}\n` +
-    `Author URI: ${tData.authorUrl}\n` +
-    `Description: ${tData.themeDesc}\n` +
-    `Tags: ${tData.themeTags}\n` +
-    `Version: ${tData.themeVersion}\n` +
-    `Requires at least: ${tData.minwp}\n` +
-    `Tested up to: ${tData.wpv}\n` +
-    `Requires PHP: ${tData.minphp}\n` +
-    `PHP Tested up to: ${tData.phpv}\n` +
-    `License: ${tData.license}\n` +
-    `License URI: ${tData.licenseUrl}\n` +
-    `Text Domain: ${tData.themeSlug}\n ` +
-    ` \n` +
-    `*** DO NOT MODIFY THIS FILE OR YOU WILL BREAK YOUR THEME! ***\n` +
-    ` \n` +
-    `This file is only here because without it WordPress will cease to function properly.\n` +
-    `If you need customize the CSS of your website, please use the ${tData.themeName} options section within \n` + 
-    `your WordPress admin dashboard and/or by using the WordPress Customizer. If you wish to add your \n` +
-    `own custom CSS, PHP, JS, or other code, please use the ${tData.themeName} child theme which should have been\n` +
-    `included with your theme package. If you do not have a child theme, then please contact the author \n` +
-    `of this theme at ( ${tData.authorEmail} ) to obtain one as anything changed within the main theme \n` +
-    `files directly, will be overwritten and lost when the theme is updated.\n` +
-    ` \n`;
+    `/*!\n` +
+    ` * Theme Name: ${tData.themeName}\n` +
+    ` * Theme URI: ${tData.themeUri}\n` +
+    ` * ${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
+    ` * Author: ${tData.authorName}\n` +
+    ` * Author URI: ${tData.authorUrl}\n` +
+    ` * Description: ${tData.themeDesc}\n` +
+    ` * Tags: ${tData.themeTags}\n` +
+    ` * Version: ${tData.themeVersion}\n` +
+    ` * Requires at least: ${tData.minwp}\n` +
+    ` * Tested up to: ${tData.wpv}\n` +
+    ` * Requires PHP: ${tData.minphp}\n` +
+    ` * PHP Tested up to: ${tData.phpv}\n` +
+    ` * License: ${tData.license}\n` +
+    ` * License URI: ${tData.licenseUrl}\n` +
+    ` * Text Domain: ${tData.themeSlug}\n` +
+    ` * \n` +
+    ` * *** DO NOT MODIFY THIS FILE OR YOU WILL BREAK YOUR THEME! ***\n` +
+    ` * \n` +
+    ` * This file is only here because without it WordPress will cease to function properly.\n` +
+    ` * If you need customize the CSS of your website, please use the ${tData.themeName} options section within \n` + 
+    ` * your WordPress admin dashboard and/or by using the WordPress Customizer. If you wish to add your \n` +
+    ` * own custom CSS, PHP, JS, or other code, please use the ${tData.themeName} child theme which should have been\n` +
+    ` * included with your theme package. If you do not have a child theme, then please contact the author \n` +
+    ` * of this theme at ( ${tData.authorEmail} ) to obtain one as anything changed within the main theme \n` +
+    ` * files directly, will be overwritten and lost when the theme is updated.\n` +
+    ` * \n` +
+    ` */\n\n`;
 
 /** 
  * Banner for WP Child Style CSS File
