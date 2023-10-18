@@ -49,14 +49,17 @@ export const phpBanner =
 
 /** Banner for JS Files */
 export const jsBanner = 
-    //'/**\n' +
-    `${tData.themeName} - ${tData.themeDesc} \n` +
-    `Built for WordPress Version: ${tData.wpv}, Running on PHP Version: ${tData.phpv} \n` +
-    `@copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorCompany}  ${tData.authorCompanyUrl} \n` +
-    `@license ${tData.license}  ${tData.licenseUrl} \n` +
-    `@author ${tData.authorName} <${tData.authorEmail}> ${tData.authorUrl} \n` +
-    `@package ${tData.themeName}\n` +
-    `@version ${tData.themeVersion}`;
+    '/**\n' +
+    ` * ${tData.themeName} - ${tData.themeDesc} \n` +
+    ` * ${tData.themeUri}\n` +
+    ` * Built for WordPress Minimum Version: ${tData.minwp}, Running on PHP Minimum Version: ${tData.minphp}\n` +
+    ` * Optimized for WordPress Version: ${tData.wpv}, Running on PHP Version: ${tData .phpv}\n` +
+    ` * @copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorCompany}  ${tData.authorCompanyUrl} \n` +
+    ` * @license ${tData.license}  ${tData.licenseUrl} \n` +
+    ` * @author ${tData.authorName} <${tData.authorEmail}> ${tData.authorUrl} \n` +
+    ` * @package ${tData.themeName}\n` +
+    ` * @version ${tData.themeVersion}\n` +
+    ` */\n\n`;
 
 /** 
  * Banner for WP Style CSS File
