@@ -44,7 +44,7 @@ export function jsBuildMain() {
         .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
         .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}.js` ) )
         .pipe( gConfig.gPlugins.if( gConfig.isProd, gConfig.gPlugins.uglify() ) )
-        .pipe( gConfig.gPlugins.headerComment( jsBanner  ) )
+        .pipe( gConfig.gPlugins.banner( jsBanner  ) )
         .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
@@ -58,7 +58,7 @@ export function jsBuildAdmin() {
         .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
         .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}-admin.js` ) )
         .pipe( gConfig.gPlugins.if( gConfig.isProd, gConfig.gPlugins.uglify() ) )
-        .pipe( gConfig.gPlugins.headerComment( jsBanner  ) )
+        .pipe( gConfig.gPlugins.banner( jsBanner  ) )
         .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
@@ -72,7 +72,7 @@ export function jsBuildTools() {
         .pipe( gConfig.gPlugins.babel( { presets: [ '@babel/env' ] } ) )
         .pipe( gConfig.gPlugins.concat( `${tData.themeSlug}-tools.js` ) )
         .pipe( gConfig.gPlugins.if( gConfig.isProd, gConfig.gPlugins.uglify() ) )
-        .pipe( gConfig.gPlugins.headerComment( jsBanner  ) )
+        .pipe( gConfig.gPlugins.banner( jsBanner  ) )
         .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
