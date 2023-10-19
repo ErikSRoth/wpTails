@@ -71,7 +71,8 @@ export function wpChildStyles() {
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
         
         .pipe( sass().on( 'error', sass.logError ) )
-        .pipe( gConfig.gPlugins.headerComment( cssBanner.wpChildStyleBanner ) )
+        
+        .pipe( gConfig.gPlugins.banner( cssBanner.wpChildStyleBanner ) )
 
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
 
@@ -88,6 +89,7 @@ export function appStyles() {
         .pipe( sass().on( 'error', sass.logError ) )
 
         .pipe( gConfig.gPlugins.headerComment( cssBanner.cssBanner ) )
+
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
