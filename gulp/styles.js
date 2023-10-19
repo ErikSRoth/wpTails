@@ -71,7 +71,7 @@ export function wpChildStyles() {
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
         
         .pipe( sass().on( 'error', sass.logError ) )
-        
+
         .pipe( gConfig.gPlugins.banner( cssBanner.wpChildStyleBanner ) )
 
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
@@ -88,7 +88,7 @@ export function appStyles() {
 
         .pipe( sass().on( 'error', sass.logError ) )
 
-        .pipe( gConfig.gPlugins.headerComment( cssBanner.cssBanner ) )
+        .pipe( gConfig.gPlugins.banner( cssBanner.cssBanner ) )
 
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
         .pipe( gulp.dest( `${ destPath }` ) );
@@ -100,9 +100,13 @@ export function appAdminStyles() {
     const destPath = `${gConfig.astsPath}/css/`;
     return gulp.src( srcPath )
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
-        .pipe( gConfig.gPlugins.replace( 'cssFileBanner', `${ cssBanner.cssTopBnr}` ) )
+
+        
         .pipe( sass().on( 'error', sass.logError ) )
-        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+
+        .pipe( gConfig.gPlugins.banner( cssBanner.cssBanner ) )
+
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
