@@ -65,7 +65,7 @@ export const jsBanner =
  * Banner for WP Style CSS File
  */
 export const wpStyleBanner = 
-    `/*!\n` +
+    `/*\n` +
     ` * Theme Name: ${tData.themeName}\n` +
     ` * Theme URI: ${tData.themeUri}\n` +
     ` * ${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
@@ -98,20 +98,23 @@ export const wpStyleBanner =
  * Banner for WP Child Style CSS File
  */
 export const wpChildStyleBanner = 
-    `Theme Name: ${tData.themeName} Child Theme\n` +
-    `Theme URI: ${tData.themeUri}\n` +
-    `${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
-    `Author: ${tData.authorName}\n` +
-    `Author URI: ${tData.authorUrl}\n` +
-    `Description: ${tData.themeDesc}\n` +
-    `Tags: ${tData.themeTags}\n` +
-    `Version: ${tData.themeVersion}\n` +
-    `Template: ${tData.themeSlug}\n` +
-    ` \n` +
-    `*** DO NOT MODIFY ANYTHING ABOVE THIS LINE OR YOU WILL BREAK YOUR THEME! ***\n` +
-    ` \n` +
-    `Use this child CSS page to overwrite the ${tData.themeName} theme CSS values or to create\n` + 
-    `your own CSS customizations. Add your custom code below this comment block.\n`;
+    `/*\n` +
+    ` * Theme Name: ${tData.themeName} Child Theme\n` +
+    ` * Theme URI: ${tData.themeUri}\n` +
+    ` * ${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
+    ` * Author: ${tData.authorName}\n` +
+    ` * Author URI: ${tData.authorUrl}\n` +
+    ` * Description: ${tData.themeDesc}\n` +
+    ` * Tags: ${tData.themeTags}\n` +
+    ` * Version: ${tData.themeVersion}\n` +
+    ` * Template: ${tData.themeSlug}\n` +
+    ` * \n` +
+    ` * *** DO NOT MODIFY ANYTHING ABOVE THIS LINE OR YOU WILL BREAK YOUR THEME! ***\n` +
+    ` * \n` +
+    ` * Use this child CSS page to overwrite the ${tData.themeName} theme CSS values or to create\n` + 
+    ` * your own CSS customizations. Add your custom code below this comment block.\n` +
+    ` * \n` +
+    ` */\n\n`;
 
 /**
  * Banner for GPL Style CSS File
