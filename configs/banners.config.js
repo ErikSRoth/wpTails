@@ -120,37 +120,39 @@ export const wpChildStyleBanner =
  * Banner for GPL Style CSS File
  */
 export const gplStyleSheet = 
-    `/*!\n` +
-    `Theme Name: ${tData.themeName}\n` +
-    `Theme URI: ${tData.themeUri}\n` +
-    `${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
-    `Author: ${tData.authorName}\n` +
-    `Author URI: ${tData.authorUrl}\n` +
-    `Description: ${tData.themeDesc}\n` +
-    `Tags: ${tData.themeTags}\n` +
-    `Version: ${tData.themeVersion}\n` +
-    `Requires at least: ${tData.minwp}\n` +
-    `Tested up to: ${tData.wpv}\n` +
-    `Requires PHP: ${tData.minphp}\n` +
-    `PHP Tested up to: ${tData.phpv}\n` +
-    `License: ${tData.license}\n` +
-    `License URI: ${tData.licenseUrl}\n` +
-    `Text Domain: ${tData.themeSlug}\n ` +
-    ` \n` +
-    `This theme, like WordPress, is licensed under the GPL.\n` +
-    `Use it to make something cool, have fun, and share what you've learned with others.\n ` +
-    `*/`;
+    `/*\n` +
+    ` * Theme Name: ${tData.themeName}\n` +
+    ` * Theme URI: ${tData.themeUri}\n` +
+    ` * ${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
+    ` * Author: ${tData.authorName}\n` +
+    ` * Author URI: ${tData.authorUrl}\n` +
+    ` * Description: ${tData.themeDesc}\n` +
+    ` * Tags: ${tData.themeTags}\n` +
+    ` * Version: ${tData.themeVersion}\n` +
+    ` * Requires at least: ${tData.minwp}\n` +
+    ` * Tested up to: ${tData.wpv}\n` +
+    ` * Requires PHP: ${tData.minphp}\n` +
+    ` * PHP Tested up to: ${tData.phpv}\n` +
+    ` * License: ${tData.license}\n` +
+    ` * License URI: ${tData.licenseUrl}\n` +
+    ` * Text Domain: ${tData.themeSlug}\n ` +
+    ` * \n` +
+    ` * This theme, like WordPress, is licensed under the GPL.\n` +
+    ` * Use it to make something cool, have fun, and share what you've learned with others.\n` +
+    ` * \n` +
+    ` */\n\n`;
 
 /** 
  * Banner for ALL Other CSS Files
  */
 export const cssBanner = 
-    '/*!\n' +
-    `${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
-    `License: ${tData.license}\n` +
-    `License URI: ${tData.licenseUrl}\n` +
-    `Text Domain: ${tData.themeSlug}\n` +
-    `Version: ${tData.themeVersion}\n` +
-    `*/ \n \n `;
+    '/*\n' +
+    ` * ${tData.themeName} Copyright ©${tData.copyStart}-${tData.copyEnd} ${tData.authorName} ${tData.authorUrl}\n` +
+    ` * License: ${tData.license}\n` +
+    ` * License URI: ${tData.licenseUrl}\n` +
+    ` * Text Domain: ${tData.themeSlug}\n` +
+    ` * Version: ${tData.themeVersion}\n` +
+    ` * \n` +
+    ` */\n\n `;
 
 /** EOF */
