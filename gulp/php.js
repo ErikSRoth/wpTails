@@ -29,17 +29,19 @@ import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
-import { phpTopBnr } from "../configs/banners.config";
+import { phpBanner } from "../configs/banners.config";
 
 /** PHP Main Theme  */
 export function phpDev() {
-    const srcPath = [ `${gConfig.srcPath}/**/*.php` ];
+    const srcPath = [ `${gConfig.srcPath}/**/*.php`, `!${gConfig.srcPath}/functions-child.php` ];
     const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
     return gulp.src( srcPath )
-        .pipe( gConfig.gPlugins.replace( '//topBanner', `${phpTopBnr}` ) )
+        .pipe( gConfig.gPlugins.banner( phpBanner ) )
         .pipe( gulp.dest( destPath ) );
 };
 
+/** PHP Child Theme  */
 
+/** PHP GPL Theme  */
 
 /** EOF */

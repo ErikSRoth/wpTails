@@ -1,4 +1,3 @@
 <?php
- //topBanner
+/** Header Code */
 ?>
-LOL

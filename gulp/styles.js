@@ -30,7 +30,7 @@ import * as cssBanner from "../configs/banners.config";
 
 /** External Dependencies */
 import dartSass from 'sass';
-import gulpSass from 'gulp-sass';
+import gulpSass from 'gulp-sass'; 
 
 /** SASS/SCSS Processing Command */
 const sass = gulpSass( dartSass );         
@@ -46,9 +46,13 @@ export function wpStyles() {
     const destPath = `${gConfig.devPath}/${tData.themeMain}/`;
     return gulp.src( srcPath )
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
-        .pipe( gConfig.gPlugins.replace( 'wpStyleSheet', `${ cssBanner.cssWpStyleSheetBnr }` ) )
+
+
         .pipe( sass().on( 'error', sass.logError ) )
-        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+
+        .pipe( gConfig.gPlugins.banner( cssBanner.wpStyleBanner ) )
+
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
@@ -65,9 +69,13 @@ export function wpChildStyles() {
     return gulp.src( srcPath )
         .pipe( gConfig.gPlugins.rename( 'style.css' ) )
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
-        .pipe( gConfig.gPlugins.replace( 'wpChildStyleSheet', `${ cssBanner.wpChildStyleSheet }` ) )
+        
         .pipe( sass().on( 'error', sass.logError ) )
-        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+
+        .pipe( gConfig.gPlugins.banner( cssBanner.wpChildStyleBanner ) )
+
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
+
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
@@ -77,9 +85,12 @@ export function appStyles() {
     const destPath = `${gConfig.astsPath}/css/`;
     return gulp.src( srcPath )
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
-        .pipe( gConfig.gPlugins.replace( 'cssFileBanner', `${ cssBanner.cssTopBnr}` ) )
+
         .pipe( sass().on( 'error', sass.logError ) )
-        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+
+        .pipe( gConfig.gPlugins.banner( cssBanner.cssBanner ) )
+
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
@@ -89,9 +100,13 @@ export function appAdminStyles() {
     const destPath = `${gConfig.astsPath}/css/`;
     return gulp.src( srcPath )
         .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.init()))
-        .pipe( gConfig.gPlugins.replace( 'cssFileBanner', `${ cssBanner.cssTopBnr}` ) )
+
+        
         .pipe( sass().on( 'error', sass.logError ) )
-        .pipe(gConfig.gPlugins.sourcemaps.write( '.' ))
+
+        .pipe( gConfig.gPlugins.banner( cssBanner.cssBanner ) )
+
+        .pipe(gConfig.gPlugins.if(!gConfig.isProd, gConfig.gPlugins.sourcemaps.write( '.' )))
         .pipe( gulp.dest( `${ destPath }` ) );
 };
 
