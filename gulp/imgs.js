@@ -31,7 +31,7 @@ import * as tData from "../configs/theme.config";
 
 /** Theme Image Processing */
 export function wpImages() {
-    return gulp.src( `${gConfig.srcPath}/img/**/*`, `!${gConfig.srcPath}/img/.gitkeep` )
+    return gulp.src( `${gConfig.srcPath}/img/**/*`, `!${gConfig.srcPath}/img/.gitkeep`, `!${gConfig.srcPath}/img/favs/*.*` )
         .pipe( gulp.dest( `${gConfig.devPath}/${tData.themeMain}/assets/images` ) );
 }
 
@@ -40,3 +40,5 @@ export function wpChildScreenshot() {
     return gulp.src( `${gConfig.srcPath}/img/screenshot.png` )
         .pipe( gulp.dest( `${gConfig.devPath}/${tData.themeChild}` ) );
 }
+
+/** */
