@@ -31,7 +31,7 @@ import * as tData from "../configs/theme.config";
 
 /** Theme Image Processing */
 export function wpImages() {
-    return gulp.src( `${gConfig.srcPath}/img/**/*` )
+    return gulp.src( `${gConfig.srcPath}/img/**/*`, `!${gConfig.srcPath}/img/.gitkeep` )
         .pipe( gulp.dest( `${gConfig.devPath}/${tData.themeMain}/assets/images` ) );
 }
 
