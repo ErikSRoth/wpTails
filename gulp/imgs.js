@@ -46,3 +46,5 @@ export function wpFavs() {
     return gulp.src( `${gConfig.srcPath}/img/favs/*.*`, `!${gConfig.srcPath}/img/favs/.gitkeep` )
         .pipe( gulp.dest( `${gConfig.devPath}/${tData.themeMain}` ) );
 }
+
+/** EOF */
