@@ -17,6 +17,7 @@ import * as clean from './gulp/clean';
 import * as php from './gulp/php';
 import * as styles from './gulp/styles';
 import * as scripts from './gulp/scripts';
+import * as imgs from './gulp/imgs';
 
 /** Gulp Tasks */
 
@@ -31,7 +32,9 @@ export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
 export const setupDev = series( cleanDev, 
                                 parallel( styles.wpChildStyles, styles.wpStyles ), 
                                 parallel( styles.appAdminStyles, styles.appStyles ),
-                                parallel( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ), 
+                                parallel( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ),
+                                parallel( php.wpPhp, php.wpChildPhp ),
+                                parallel( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs )  
                                 );
 
 
