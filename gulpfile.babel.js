@@ -18,6 +18,7 @@ import * as php from './gulp/php';
 import * as styles from './gulp/styles';
 import * as scripts from './gulp/scripts';
 import * as imgs from './gulp/imgs';
+import * as fonts from './gulp/fonts';
 
 /** Gulp Tasks */
 
@@ -34,7 +35,8 @@ export const setupDev = series( cleanDev,
                                 parallel( styles.appAdminStyles, styles.appStyles ),
                                 parallel( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ),
                                 parallel( php.wpPhp, php.wpChildPhp ),
-                                parallel( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs )  
+                                parallel( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs ),
+                                parallel( fonts.wpFonts ) 
                                 );
 
 
