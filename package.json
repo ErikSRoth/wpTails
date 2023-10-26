@@ -49,9 +49,9 @@
   "scripts": {
     "archive": "",
     "build": "",
-    "clean:all": "gulp clean --cType=all",
-    "clean:build": "gulp clean --cType=build",
-    "clean:dist": "gulp clean  --cType=dist",
+    "clean:all": "gulp cleanup --cType=all",
+    "clean:build": "gulp cleanup --cType=build",
+    "clean:dist": "gulp cleanup  --cType=dist",
     "dev": "",
     "install": "",
     "postinstall": "",
