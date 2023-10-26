@@ -29,31 +29,31 @@ export const cleanDev = parallel( clean.ccdev, clean.cmdev, clean.cgdev );
 /** Wipe Distribution Build Folders */
 export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
 
-/** Gulp Cleanup Tasks */
+/** Gulp Cleanup Tasks 
 function cleanUp( done ) {
 
     if ( args.all ) {
-       
+       series( clean.ccdev, clean.cmdev, clean.cgdev, clean.ccdist, clean.cmdist, clean.cgdist );
     } else if ( args.dist ) {
-
+        series( clean.ccdist, clean.cmdist, clean.cgdist );
     } else if ( args.dev ) {   
-    
+        series( clean.ccdev, clean.cmdev, clean.cgdev );
     }
     done();
-}
+}*/
 
 
 export const setupDev = series( cleanDev, 
                                 parallel( styles.wpChildStyles, styles.wpStyles ), 
                                 parallel( styles.appAdminStyles, styles.appStyles ),
                                 parallel( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ),
-                                parallel( php.wpPhp, php.wpChildPhp ),
+                               // parallel( php.wpPhp, php.wpChildPhp ),
                                 parallel( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs ),
-                                parallel( fonts.wpFonts ) 
+                              //  parallel( fonts.wpFonts ) 
                                 );
 
 
-//export const gtest = series();
+//export const gtest = series( cleanUp );
 
 
 /** EOF */
