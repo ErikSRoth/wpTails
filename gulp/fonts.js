@@ -28,3 +28,21 @@ import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
+
+/** Fonts Main Theme  */
+export function fontsDev() {
+    const srcPath = `${gConfig.srcPath}/fonts/**/*`;
+    const destPath = `${gConfig.devPath}/${tData.themeMain}/assets/fonts/`;
+    return gulp.src( srcPath )
+        .pipe( gulp.dest( destPath ) );
+};
+
+/** Fonts GPL Theme  */
+export function fontsGpl() {
+    const srcPath = `${gConfig.srcPath}/fonts/**/*`;
+    const destPath = `${gConfig.gplPath}/${tData.themeGpl}/assets/fonts/`;
+    return gulp.src( srcPath )
+        .pipe( gulp.dest( destPath ) );
+};
+
+/** EOF */
