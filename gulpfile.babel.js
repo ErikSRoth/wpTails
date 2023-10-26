@@ -13,6 +13,7 @@ const gConfig = require( "./configs/gulp.config" );
 const tConfig = require( "./configs/theme.config" );
 
 /** External Dependencies */
+var args = require('yargs').argv;
 import * as clean from './gulp/clean';
 import * as php from './gulp/php';
 import * as styles from './gulp/styles';
@@ -28,6 +29,18 @@ export const cleanDev = parallel( clean.ccdev, clean.cmdev, clean.cgdev );
 /** Wipe Distribution Build Folders */
 export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
 
+/** Gulp Cleanup Tasks */
+function cleanUp( done ) {
+
+    if ( args.all ) {
+       
+    } else if ( args.dist ) {
+
+    } else if ( args.dev ) {   
+    
+    }
+    done();
+}
 
 
 export const setupDev = series( cleanDev, 
