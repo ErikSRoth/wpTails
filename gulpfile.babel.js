@@ -43,13 +43,17 @@ export const cleanJsDev = parallel( clean.clnJs );
 
 
 export const setupDev = series( cleanDev, 
-                                parallel( styles.wpChildStyles, styles.wpStyles ), 
-                                parallel( styles.appAdminStyles, styles.appStyles ),
-                                parallel( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ),
-                                parallel( php.phpDev ),
-                                parallel( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs ),
-                                parallel( fonts.fontsDev ) 
+                                series( styles.wpChildStyles, styles.wpStyles, styles.appAdminStyles, styles.appStyles ), 
+                                series( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ),
+                                series( php.phpDev, php.phpChildDev ),
+                                series( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs, fonts.fontsDev ),
                                 );
+
+export const setupDist = series( cleanDist );
+
+export const setupGpl = series( cleanGpl );
+
+
 
 
 // export const gtest = series( );
