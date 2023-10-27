@@ -29,7 +29,7 @@ export const cleanDev = parallel( clean.ccdev, clean.cmdev, clean.cgdev );
 /** Wipe Distribution Build Folders */
 export const cleanDist = parallel( clean.ccdist, clean.cmdist, clean.cgdist );
 
-/** Gulp Cleanup Tasks 
+/** Gulp Cleanup Tasks */
 function cleanUp( done ) {
 
     if ( args.all ) {
@@ -40,7 +40,7 @@ function cleanUp( done ) {
         series( clean.ccdev, clean.cmdev, clean.cgdev );
     }
     done();
-}*/
+}
 
 
 export const setupDev = series( cleanDev, 
@@ -53,7 +53,7 @@ export const setupDev = series( cleanDev,
                                 );
 
 
-//export const gtest = series( cleanUp );
+export const gtest = series( cleanUp );
 
 
 /** EOF */
