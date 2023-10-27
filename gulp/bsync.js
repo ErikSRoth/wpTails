@@ -26,3 +26,10 @@ import * as gConfig from "../configs/gulp.config";
 import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
+
+/** BrowserSync Control Scripts */
+export const bsync = {
+    //
+}
+
+/** EOF */
