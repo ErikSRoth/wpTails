@@ -47,9 +47,9 @@ export const setupDev = series( cleanDev,
                                 parallel( styles.wpChildStyles, styles.wpStyles ), 
                                 parallel( styles.appAdminStyles, styles.appStyles ),
                                 parallel( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ),
-                               // parallel( php.wpPhp, php.wpChildPhp ),
+                                parallel( php.wpPhp, php.wpChildPhp ),
                                 parallel( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs ),
-                              //  parallel( fonts.wpFonts ) 
+                                parallel( fonts.fontsDev ) 
                                 );
 
 
