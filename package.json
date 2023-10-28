@@ -51,10 +51,10 @@
     "clean:all": "gulp cleanAll",
     "clean:dev": "gulp cleanDev",
     "clean:dist": "gulp cleanDist",
-    "dev": "",
-    "install": "",
+    "dev": "gulp dev",
+    "install": "npm install",
     "postinstall": "",
-    "setup": "npm install",
+    "setup": "gulp setupDev",
     "test": "gulp gtest "
   }
 }
