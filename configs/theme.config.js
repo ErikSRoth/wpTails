@@ -109,10 +109,7 @@ export const buildGpl = true;
  */
 export const useBanners = true;
 
-/**
- * Banner Information
-*/
-export const copyStart = '2022';
+
 
 
 /** Do No Change Anything Below This Line Unless You Know What You Are Doing! */
@@ -146,9 +143,11 @@ export const wpv = '6.1';
 export const phpv = '8.1';
 
 
+
 /**
- * Copyright end year
+ * Copyright start and end years.
  */
+export const copyStart = '2022';
 export const copyEnd = new Date().getFullYear();
 
 /** EOF */
