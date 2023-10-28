@@ -19,6 +19,8 @@ import * as styles from './gulp/styles';
 import * as scripts from './gulp/scripts';
 import * as imgs from './gulp/imgs';
 import * as fonts from './gulp/fonts';
+import * as watch from './gulp/watch';
+import * as bSync from './gulp/bsync';
 
 /** Gulp Tasks */
 
