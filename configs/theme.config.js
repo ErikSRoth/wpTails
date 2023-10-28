@@ -89,6 +89,15 @@ export const licenseUrl = 'https://opensource.org/licenses/MIT';
 export const spdxLicense = 'MIT';
 
 /**
+ * BrowserSync information
+ */
+export const bsProxy = 'http://localhost:8888';
+export const bsPort = 3000;
+export const bsOpen = true;
+export const bsNotify = true;
+export const bsReloadDelay = 1000;
+
+/**
  * Which version you build can be set with the following variables. The default
  * boolean value is set to true. If you do want to build a child theme or a
  * gpl version foo the theme, set the corresponding theme variables to false.
