@@ -54,7 +54,7 @@ export const setupDist = series( cleanDist );
 export const setupGpl = series( cleanGpl );
 
 
-
+export const devenv = series( setupDev );
 
 // export const gtest = series( );
 
