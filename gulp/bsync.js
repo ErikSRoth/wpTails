@@ -28,9 +28,32 @@ import * as tData from "../configs/theme.config";
 /** External Dependencies */
 import * as brSync from 'browser-sync';
 
+/** BrowserSync Configuration */
+const browserSync = brSync.create();
+
 /** BrowserSync Control Scripts */
-export const bSyncDev = {
-    //
+export function bSyncDev(done) {
+    browserSync.init({
+        proxy: tData.bsProxy,
+        https: tData.bsHttps,
+        //port: gConfig.port,
+        open: tData.bsOpen,
+        notify: tData.bsNotify,
+        browser: tData.bsBrowser,
+        ghostMode: {
+            clicks: tData.bsGhostModeClicks,
+            location: tData.bsGhostModeLocation,
+            forms: tData.bsGhostModeForms,
+            scroll: tData.bsGhostModeScroll
+        }
+    });
+    done();
+}
+
+export function bSyncReload(done) {
+    browserSync.reload();
+    done();
+    
 }
 
 /** EOF */

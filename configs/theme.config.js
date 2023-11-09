@@ -91,11 +91,18 @@ export const spdxLicense = 'MIT';
 /**
  * BrowserSync information
  */
-export const bsProxy = 'http://localhost:8888';
-export const bsPort = 3000;
+export const bsProxy = 'https://wptails.local';
+// export const bsPort = 3000;
+export const bsHttps = true;
 export const bsOpen = true;
 export const bsNotify = true;
 export const bsReloadDelay = 1000;
+export const bsGhostModeClicks = true;
+export const bsGhostModeLocation = true;
+export const bsGhostModeForms = true;
+export const bsGhostModeScroll = true;
+export const bsBrowser = 'default';
+
 
 /**
  * Which version you build can be set with the following variables. The default
