@@ -92,9 +92,11 @@ export const spdxLicense = 'MIT';
  * BrowserSync information
  */
 export const bsProxy = 'https://wptails.local';
-// export const bsPort = 3000;
+export const bsHost = 'wptails.local';
+export const bsPort = '8181';
+export const bsHttpModule = 'http2';
 export const bsHttps = true;
-export const bsOpen = true;
+export const bsOpen = 'external';
 export const bsNotify = true;
 export const bsReloadDelay = 1000;
 export const bsGhostModeClicks = true;

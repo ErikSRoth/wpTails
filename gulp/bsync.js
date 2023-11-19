@@ -34,19 +34,28 @@ const browserSync = brSync.create();
 /** BrowserSync Control Scripts */
 export function bSyncDev(done) {
     browserSync.init({
-        proxy: tData.bsProxy,
-        https: tData.bsHttps,
-        //port: gConfig.port,
+        open: false,
+        //injectChanges: true,
+        //proxy: 'https://wptails.local',
+        https: { 
+            key: '/Users/erikroth/Library/Application Support/Local/run/router/nginx/certs/wptails.local.key', 
+            cert: '/Users/erikroth/Library/Application Support/Local/run/router/nginx/certs/wptails.local.crt' 
+        },
+        //proxy: tData.bsProxy,
+        host: tData.bsHost,
+        //httpModule: tData.bsHttpModule,
+        //https: tData.bsHttps,
+        //port: tData.bsPort,
         open: tData.bsOpen,
-        notify: tData.bsNotify,
-        browser: tData.bsBrowser,
-        ghostMode: {
+        //notify: tData.bsNotify,
+        //browser: tData.bsBrowser,
+        /*ghostMode: {
             clicks: tData.bsGhostModeClicks,
             location: tData.bsGhostModeLocation,
             forms: tData.bsGhostModeForms,
             scroll: tData.bsGhostModeScroll
-        }
-    });
+        }*/
+    }); 
     done();
 }
 

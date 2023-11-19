@@ -30,6 +30,9 @@ import * as tData from "../configs/theme.config";
 
 /** External Dependencies */
 import { phpBanner } from "../configs/banners.config";
+//import { rename } from "gulp-rename";
+
+const rename = require( 'gulp-rename' );
 
 /** PHP Main Theme  */
 export function phpDev() {
@@ -41,7 +44,17 @@ export function phpDev() {
 };
 
 /** PHP Child Theme  */
-
+export function phpChildDev() {
+    const srcPath = `${gConfig.srcPath}/functions-child.php`;
+    const destPath = `${gConfig.devPath}/${tData.themeChild}/`;
+    return gulp.src( srcPath )
+        .pipe( gConfig.gPlugins.banner( phpBanner ) )
+        .pipe( rename({
+            basename: 'functions',
+            extname: '.php'
+        }) )
+        .pipe( gulp.dest( destPath ) );
+};
 /** PHP GPL Theme  */
 
 /** EOF */

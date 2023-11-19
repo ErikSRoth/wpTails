@@ -31,19 +31,19 @@ import * as tData from "../configs/theme.config";
 
 /** Theme Image Processing */
 export function wpImages() {
-    return gulp.src( `${gConfig.srcPath}/img/**/*`, `!${gConfig.srcPath}/img/.gitkeep`, `!${gConfig.srcPath}/img/favs/*.*` )
+    return gulp.src( `${gConfig.srcPath}/img/**/*`, `!${gConfig.srcPath}/img/.gitkeep`, `!${gConfig.srcPath}/img/favs/*.*`, {allowEmpty: true} )
         .pipe( gulp.dest( `${gConfig.devPath}/${tData.themeMain}/assets/images` ) );
 }
 
 /** The Child Screenshot Image */
 export function wpChildScreenshot() {
-    return gulp.src( `${gConfig.srcPath}/img/screenshot.png` )
+    return gulp.src( `${gConfig.srcPath}/img/screenshot.png`, {allowEmpty: true} )
         .pipe( gulp.dest( `${gConfig.devPath}/${tData.themeChild}` ) );
 }
 
 /** Favicons Processing*/
 export function wpFavs() {
-    return gulp.src( `${gConfig.srcPath}/img/favs/*.*`, `!${gConfig.srcPath}/img/favs/.gitkeep` )
+    return gulp.src( `${gConfig.srcPath}/img/favs/*.*`, `!${gConfig.srcPath}/img/favs/.gitkeep`, {allowEmpty: true} )
         .pipe( gulp.dest( `${gConfig.devPath}/${tData.themeMain}` ) );
 }
 
