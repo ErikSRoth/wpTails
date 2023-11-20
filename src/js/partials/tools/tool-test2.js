@@ -1,2 +1,2 @@
 // src/app.js
-alert('heltool app 2');
+//alert('heltool app 2');

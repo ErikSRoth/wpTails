@@ -1,2 +1,2 @@
 // src/app.js
-alert('hello tool app 1');
+//alert('hello tool app 1');

@@ -57,12 +57,12 @@ export const cleanJsDev = parallel( clean.clnJs );
 
 /** Watch Styles... */
 function watchStyles() {
-    return watch( `${gConfig.srcPath}/styles/**/*.scss`, series( styles.wpChildStyles, styles.wpStyles, styles.appAdminStyles, styles.appStyles, bSync.bSyncReload ) );
+    return watch( `${gConfig.srcPath}/scss/**/*.scss`, series( styles.wpChildStyles, styles.wpStyles, styles.appAdminStyles, styles.appStyles, bSync.bSyncReload  ) );
 };
 
 /** Watch Scripts... */
 function watchScripts() {
-    return watch( `${gConfig.srcPath}/scripts/**/*.js`, series( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools, bSync.bSyncReload ) );
+    return watch( `${gConfig.srcPath}/js/**/*.js`, series( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools, bSync.bSyncReload  ) );
 };
 
 /** Watch PHP... */
@@ -72,12 +72,12 @@ function watchPhp() {
 
 /** Watch Images... */
 function watchImgs() {
-    return watch( `${gConfig.srcPath}/images/**/*`, series( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs, bSync.bSyncReload ) );
+    return watch( `${gConfig.srcPath}/img/**/*`, series( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs, bSync.bSyncReload  ) );
 };
 
 /** Watch Fonts... */
 function watchFonts() {
-    return watch( `${gConfig.srcPath}/fonts/**/*`, series( fonts.fontsDev, bSync.bSyncReload ) );
+    return watch( `${gConfig.srcPath}/fonts/**/*`, series( fonts.fontsDev, bSync.bSyncReload  ) );
 };
 
 /** Watch All... */
@@ -89,7 +89,7 @@ export const setupDev = series( cleanDev,
                                 series( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ),
                                 series( php.phpDev, php.phpChildDev ),
                                 series( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs, fonts.fontsDev ),
-                                bSync.bSyncDev, watchAll,
+                                bSync.bSyncDev, watchAll
 );
 
 export const setupDist = series( cleanDist );

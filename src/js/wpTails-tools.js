@@ -1,1 +1,3 @@
-jsTopBnr
+/**
+ * Javascript for wpTails tools
+ */

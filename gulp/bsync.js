@@ -41,7 +41,7 @@ export function bSyncDev(done) {
             key: '/Users/erikroth/Library/Application Support/Local/run/router/nginx/certs/wptails.local.key', 
             cert: '/Users/erikroth/Library/Application Support/Local/run/router/nginx/certs/wptails.local.crt' 
         },
-        //proxy: tData.bsProxy,
+        proxy: tData.bsProxy,
         host: tData.bsHost,
         //httpModule: tData.bsHttpModule,
         //https: tData.bsHttps,
