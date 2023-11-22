@@ -83,8 +83,14 @@ function watchFonts() {
 /** Watch All... */
 export const watchAll = parallel( watchStyles, watchScripts, watchPhp, watchImgs, watchFonts );
 
-
 export const setupDev = series( cleanDev, 
+    series( styles.wpChildStyles, styles.wpStyles, styles.appAdminStyles, styles.appStyles ), 
+    series( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ),
+    series( php.phpDev, php.phpChildDev ),
+    series( imgs.wpImages, imgs.wpChildScreenshot, imgs.wpFavs, fonts.fontsDev ),
+);
+
+export const runDev = series( cleanDev, 
                                 series( styles.wpChildStyles, styles.wpStyles, styles.appAdminStyles, styles.appStyles ), 
                                 series( scripts.jsBuildMain, scripts.jsBuildAdmin, scripts.jsBuildTools ),
                                 series( php.phpDev, php.phpChildDev ),

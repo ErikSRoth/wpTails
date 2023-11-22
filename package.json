@@ -51,7 +51,7 @@
     "clean:all": "gulp cleanAll",
     "clean:dev": "gulp cleanDev",
     "clean:dist": "gulp cleanDist",
-    "dev": "gulp devenv",
+    "dev": "gulp runDev",
     "install": "npm install",
     "postinstall": "",
     "setup": "gulp setupDev",
