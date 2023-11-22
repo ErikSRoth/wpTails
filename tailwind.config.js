@@ -2,7 +2,11 @@
 module.exports = {
     purge: {
       enabled: true,
-      content: ['./**/*.php']
+      content: [
+        './**/*.php',
+        './node_modules/tw-elements/dist/js/**/*.js',
+      ]
+      
     },
     theme: {},
     variants: {},
@@ -11,5 +15,7 @@ module.exports = {
       require('@tailwindcss/forms'),
       require('@tailwindcss/aspect-ratio'),
       require('@tailwindcss/container-queries'),
-    ]
+      require("tw-elements/dist/plugin.cjs"),
+    ],
+    darkMode: 'class'
   }
