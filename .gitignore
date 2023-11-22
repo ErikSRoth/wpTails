@@ -30,6 +30,7 @@
 !/archives
 !/bin
 !/configs
+!/dist
 !/documentation
 !/gulp
 !/release

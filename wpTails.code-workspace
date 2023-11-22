@@ -18,7 +18,8 @@
 		},
 		"explorer.fileNesting.enabled": false,
 		"scm.alwaysShowRepositories": true,
-		"scm.defaultViewMode": "tree"
+		"scm.defaultViewMode": "tree",
+		"terminal.integrated.fontSize": 14
 	},
 	"extensions": {
 		"recommendations": [
